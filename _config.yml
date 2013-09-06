@@ -1,0 +1,16 @@
+# Github settings (can't be changed)
+safe: true
+lsi: false
+pygments: true
+
+# Custom configuration
+permalink: pretty
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Readme.md
+  - .gitignore
+  - node_modules
+  - Gruntfile.js

@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Dev Blog</title>
-</head>
-<body>
-{{ content }}
-</body>
-</html>
+{% include header.html %}
+	<div id="main" class="group">
+		<div id="primary">
+			<div id="content" role="main">
+						<nav id="nav-above">
+						</nav><!-- #nav-above -->
+	
+							{{content}}
+				
+						<nav id="nav-below">
+						</nav><!-- #nav-above -->
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+		</div><!-- #secondary .widget-area -->
+	</div><!-- #main -->
+{% include footer.html %}

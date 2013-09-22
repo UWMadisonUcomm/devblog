@@ -1,0 +1,445 @@
+/* =Responsive Structure
+----------------------------------------------- */
+
+
+/* MEDIA QUERIES
+------------------------ */
+
+/* Large desktops */
+/*@import "responsive-1200px-min.less";*/
+
+/* Tablets to regular desktops */
+/*@import "responsive-768px-979px.less";*/
+@media (min-width: 767px) and (max-width: 979px) {
+  .left-sidebar #main {
+    background-position: -30px top !important;
+  }
+  .right-sidebar #content {
+    margin-left: 4%;
+  }
+
+}
+
+/* Phones to portrait tablets and narrow desktops */
+@media (max-width: 767px) {
+
+  /* Simplify the basic layout */
+  body {
+    padding: 0;
+  }
+  #page {
+    margin-top: 0;
+    width:auto;
+    max-width:1000px;
+    margin-top: 23px;
+  }
+
+  #main {
+    background:none;
+    border:none;
+  }
+
+  #main #primary {
+    float: none;
+    margin: 0;
+  }
+  #main #content {
+    margin: 0 7.6%;
+    width: auto;
+  }
+  #main #secondary {
+    float: none;
+    margin: 0 7.6%;
+    width: auto;
+  }
+
+/* Header styles */
+  #branding {
+    border-top: none;
+  }
+
+  #logo {
+    top:0px;
+    height:62px;
+  }
+  #logo-wordmark {
+    left: 54px;
+    position: absolute;
+    top: -16px;
+  }
+  #logo-crest {
+    position: absolute;
+    top: -22px;
+    width: 55px;
+  }
+  hgroup {
+    top: 15px;
+    left: 61px;
+    max-height: 3.5em;
+    width: 80%;
+  }
+  hgroup img {
+    max-width: 100%;
+  }
+  #site-title a {
+    font-size: 1.5em;
+  }
+
+  .utility {
+    display:none;
+  }
+
+  .singular .entry-header .entry-meta {
+    top: 4px;
+  }
+
+  #nav-below {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.625em;
+  }
+
+  /* Simplify the showcase template */
+  .page-template-showcase-php .featured-posts {
+    min-height: 280px;
+  }
+  .featured-posts section.featured-post {
+    height: auto;
+  }
+  .page-template-showcase-php section.recent-posts {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  .page-template-showcase-php #main .widget-area {
+    float: none;
+    margin: 0;
+    width: auto;
+  }
+  .page-template-showcase-php .other-recent-posts {
+    border-bottom: 1px solid #ddd;
+  }
+  /* Simplify the showcase template when small feature */
+  section.featured-post .attachment-small-feature,
+  .one-column section.featured-post .attachment-small-feature {
+    border: none;
+    display: block;
+    float: left;
+    height: auto;
+    margin: 0.625em auto 1.025em;
+    max-width: 30%;
+    position: static;
+  }
+  .one-column #page {
+    width:auto;
+    max-width:690px;
+  }
+  article.feature-image.small {
+    float: right;
+    margin: 0 0 1.625em;
+    width: 64%;
+  }
+  .one-column article.feature-image.small .entry-summary {
+    height: auto;
+  }
+  article.feature-image.small .entry-summary p a {
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+  }
+  /* Remove the margin on singular articles */
+  .singular .entry-header,
+  .singular .entry-content,
+  .singular footer.entry-meta,
+  .singular #comments-title {
+    width: 100%;
+  }
+
+  /* Simplify the pullquotes and pull styles */
+  .singular blockquote.pull {
+    margin: 0 0 1.625em;
+  }
+  .singular .pull.alignleft {
+    margin: 0 1.625em 0 0;
+  }
+  .singular .pull.alignright {
+    margin: 0 0 0 1.625em;
+  }
+  .singular .entry-meta .edit-link a {
+    left: 0;
+    position: absolute;
+    top: 40px;
+  }
+  .singular #author-info {
+    margin: 2.2em -8.8% 0;
+    padding: 20px 8.8%;
+  }
+  /* Make sure we have room for our comment avatars */
+  .commentlist {
+    width: 100%;
+    margin-left: 0;
+  }
+  .commentlist > li.comment,
+  .commentlist .pingback {
+    margin-left: 102px;
+    width: auto;
+  }
+
+  /* And a full-width comment form */
+  #respond {
+    width: auto;
+  }
+  /* No need to float footer widgets at this size */
+  #colophon #supplementary .widget-area {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+  /* No need to float 404 widgets at this size */
+  .error404 #main .widget {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
+  body, input, textarea {
+    font-size: 13px;
+  }
+  #site-title a {
+    font-size: 1.5em;
+  }
+  #site-description {
+    display: none;
+  }
+  #access ul {
+    font-size: 12px;
+  }
+  article.intro .entry-content {
+    font-size: 12px;
+  }
+  .entry-title {
+    font-size: 21px;
+  }
+  .featured-post .entry-title {
+    font-size: 14px;
+  }
+  .singular .entry-title {
+    font-size: 28px;
+  }
+  .entry-meta {
+    font-size: 12px;
+  }
+  blockquote {
+    margin: 0;
+  }
+  blockquote.pull {
+    font-size: 17px;
+  }
+  /* Floated content doesn't work well at this size */
+  .alignleft,
+  .alignright {
+    display: block;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* Make sure the post-post navigation doesn't collide with anything */
+  #nav-single {
+    display: block;
+    position: static;
+  }
+  .singular .hentry {
+    padding: 0;
+  }
+  .singular.page .hentry {
+    padding: 0;
+  }
+  /* Talking avatars take up too much room at this size */
+  .commentlist > li.comment,
+  .commentlist > li.pingback {
+    margin-left: 0 !important;
+  }
+  .commentlist .avatar {
+    background: transparent;
+    display: block;
+    padding: 0;
+    position: static;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .commentlist  ul .avatar {
+    background: none;
+    left: 2.2em;
+    padding: 0;
+    position: absolute;
+    top: 2.2em;
+  }
+  .commentlist > li::before {
+    display: none;
+  }
+  /* Use the available space in the smaller comment form */
+  #respond input[type="text"] {
+    width: 95%;
+  }
+  #respond .comment-form-author .required,
+  #respond .comment-form-email .required {
+    left: 95%;
+  }
+  #content .gallery-columns-3 .gallery-item {
+    width: 31%;
+    padding-right: 2%;
+  }
+  #content .gallery-columns-3 .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #page {
+    margin:0;
+  }
+  #logo {
+    width:75% !important;
+  }
+  #logo-crest{
+    top:0;
+    width: 45px !important;
+  }
+  #logo-wordmark {
+    left: 47px;
+    top: 7px;
+    width: 70%;
+  }
+  hgroup {
+    top: 26px;
+    left: 52px;
+    width: 74%;
+  }
+  #site-title {
+    line-height: 1;
+  }
+  #site-title a {
+    font-size: 1.35em;
+  }
+}
+
+@media (max-width: 450px) {
+  #content .gallery-columns-2 .gallery-item {
+    width: 45%;
+    padding-right: 4%;
+  }
+  #content .gallery-columns-2 .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width:360px) {
+  #logo-wordmark {
+    left: 44px;
+    top: 6px;
+    width: 80%;
+  }
+  hgroup {
+    width: 67%;
+    left: 50px;
+  }
+  #site-title {
+    line-height: 1;
+  }
+  #site-title a {
+    font-size: 1.3em;
+  }
+}
+
+/*// RESPONSIVE NAVBAR
+// ------------------
+
+// From 767px and below, show a button to toggle navbar contents*/
+/*@import "responsive-navbar.less";*/
+@media (max-width: 767px) {
+  #access div {
+    margin:0;
+    clear:both;
+    padding:1px;
+  }
+  #access li {
+    border:none;
+    float:none;
+  }
+  #access ul > li {
+    border:none;
+  }
+  #access ul  {
+    margin:0;
+  }
+  #access ul,
+  #access ul li:hover ul {
+    display:none;
+  }
+
+  #access ul.in {
+    display:block;
+  }
+
+  a.collapse {
+    background: url("images/icons_sprite.png") no-repeat scroll -32px -2px #a20101;
+    border: 1px solid #940000;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    margin: 4px 3%;
+    padding: 3px 20px;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 10px;
+    width: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .collapse:hover,
+  .collapse.open {
+    background-color: #940000;
+  }
+
+  #access li > a {
+/*      padding: 0 6% !important;
+*/   }
+
+  #access li:hover > a,
+  #access .current-menu-item > a,
+  #access .current-menu-ancestor > a,
+  #access .current_page_item > a,
+  #access .current_page_ancestor > a {
+      background: #D9C39E !important;
+  }
+
+  .caret{
+    display: none;
+  }
+
+  .menu {
+    position:relative;
+  }
+
+ /*#access li {padding: 4px 20px 8px;}*/
+  #access .searchbar {
+    padding: 4px 15px 9px;
+    border-bottom: 1px solid #D9C39E
+  }
+  #access #searchform {
+    position:relative;
+    right:auto;
+    text-align: center;
+    top:auto;
+  }
+  #access #s,
+  #access #s:hover {
+    float:none;
+    width:90% !important; /*gets rid of transition on mobile*/
+  }
+}

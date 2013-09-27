@@ -1,20 +1,21 @@
 <article class="col-sm-12 list-group-item">
   <header class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      <span class="post-lede">{{ page.lede }}</span>
-      <h2 class="post-title">{{ page.title }}</h2>
-      <span class="post-meta">
-        By {{ page.author}} on {{ page.date | date_to_string }}</span>
+      <span class="post-lede">{{ post.lede }}</span>
+      <h2 class="post-title">{{ post.title }}</h2>
+      {% include post_meta.html %}
     </div>
+    {% if post.featured_image %}
     <div class="post-feat-image col-sm-12">
       <div class="row">
-        <img class="img-responsive col-sm-12" src="http://photos.uc.wisc.edu/photos/5149/original/Facebook_Salmen_J06_6579.jpg?"/>
+        <img class="img-responsive col-sm-12" src="{{ post.featured_image }}"/>
       </div>
     </div>
+    {% endif %}
   </header>
   <div class="post-content row">
     <div class="col-sm-8 col-sm-offset-2">
-      {{ page.content }}
+      {{ post.content }}
     </div>
   </div>
   <footer class="row">

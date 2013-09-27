@@ -5,32 +5,6 @@ title: UW DevBlog
 
 <div class="post-list list-group ">
   {% for post in site.posts %}
-    <article class="col-sm-12 list-group-item">
-      <header class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <span class="post-lede">{{ post.lede }}</span>
-          <h2 class="post-title">{{ post.title }}</h2>
-          <span class="post-meta">
-            By {{ post.author}} on {{ post.date | date_to_string }}</span>
-        </div>
-        {% if post.featured_image %}
-        <div class="post-feat-image col-sm-12">
-          <div class="row">
-            <img class="img-responsive col-sm-12" src="{{ post.featured_image }}"/>
-          </div>
-        </div>
-        {% endif %}
-      </header>
-      <div class="post-content row">
-        <div class="col-sm-8 col-sm-offset-2">
-          {{ post.content }}
-        </div>
-      </div>
-      <footer class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          Share me, plz!
-        </div>
-      </footer>
-    </article>
+    {% include post.html %}
   {% endfor %}
 </div>

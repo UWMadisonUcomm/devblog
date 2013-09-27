@@ -19,8 +19,6 @@ GEM
       pygments.rb (~> 0.5.0)
       redcarpet (~> 2.3.0)
       safe_yaml (~> 0.7.0)
-    jekyll-tagging (0.5.0)
-      ruby-nuggets
     liquid (2.5.2)
     maruku (0.6.1)
       syntax (>= 1.0.0)
@@ -29,7 +27,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     redcarpet (2.3.0)
-    ruby-nuggets (0.9.5)
     safe_yaml (0.7.1)
     syntax (1.0.0)
     yajl-ruby (1.1.0)
@@ -39,4 +36,3 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-tagging

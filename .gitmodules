@@ -1,0 +1,6 @@
+[submodule "_submodules/bootstrap"]
+	path = _submodules/bootstrap
+	url = https://github.com/twbs/bootstrap/
+[submodule "uw_bootstrap"]
+	path = uw_bootstrap
+	url = git@bitbucket.org:uwmadison_ucomm/uw_bootstrap.git

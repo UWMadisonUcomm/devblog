@@ -4,6 +4,7 @@ title:  "Your stock photo is outdated"
 author: "Vidal"
 date:   2013-09-25 12:01:48
 categories: jekyll update
+tags: hello yo mama
 featured_image: "http://photos.uc.wisc.edu/photos/17032/original/SatCam_app13_5150.jpg?1370446802"
 ---
 

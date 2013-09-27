@@ -1,0 +1,18 @@
+<span class="post-meta">
+  By {{ page.author}} on {{ page.date | date_to_string }}.
+
+  {% if page.categories != empty %}
+    Categories: 
+    {% for category in page.categories %}
+      <a href="category/#{{ category }}">{{ category }}</a>, 
+    {% endfor %}
+  {% endif %}
+
+  {% if page.tags != empty %}
+    Tags: 
+    {% for tag in page.tags %}
+      <a href="tag/#{{ tag }}">{{ tag }}</a>, 
+    {% endfor %}
+  {% endif %}
+
+</span>

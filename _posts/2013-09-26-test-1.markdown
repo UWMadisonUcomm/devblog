@@ -4,7 +4,6 @@ title:  "80 ways to make your site not suck (includes checklist)"
 author: "Vidal"
 date:   2013-09-26 12:01:48
 categories: jekyll update test
-tags: 
 lede: "More awesomeness"
 featured_image: "http://photos.uc.wisc.edu/photos/5149/original/Facebook_Salmen_J06_6579.jpg"
 ---

@@ -1,16 +1,5 @@
-# Github settings (can't be changed)
-safe: true
-lsi: false
+name: UW DevBlog
+markdown: redcarpet
 pygments: true
-
-# Custom configuration
-permalink: pretty
-
-# Excludes
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Readme.md
-  - .gitignore
-  - node_modules
-  - Gruntfile.js
+permalink: /blog/:title
+exclude: ['_assets', '_submodules', 'node_modules', 'Gruntfile.js', 'package.json']

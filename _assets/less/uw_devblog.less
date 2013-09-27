@@ -1,0 +1,63 @@
+@import "uw_bootstrap/uw.less";
+
+html {
+  height:100%;
+}
+
+body {
+  position: relative; /* For scrollyspy */
+  padding-top: 50px; /* Account for fixed navbar */
+  height:100%;
+}
+
+#sidebar {
+  overflow:scroll;
+  height:100%;
+  .list-group-item {
+    border-radius: 0;
+    border-left:0;
+    border-right:0;
+    .post-lede {
+      text-transform: uppercase;
+      font-size: @font-size-small; 
+    }
+    .post-title {
+      font-size: @font-size-base;
+      margin: 10px 0 5px;
+    }
+    .post-meta{
+      font-size: @font-size-base - 3;
+      font-style: italic;
+    }
+  }
+  .affix {
+    max-height:100%;
+    overflow:scroll;
+    padding:0;
+  }
+}
+
+#content {
+  .post-list {
+    article {
+      padding-top: 24px;
+      padding-bottom: 48px;
+      .post-lede {
+        text-transform: uppercase;
+        font-size: @font-size-base; 
+      }
+      .post-feat-image {
+        max-height:500px;
+        overflow:hidden;
+        padding:24px 0;
+        img {
+          padding:0;
+        }
+      }
+      .post-content {
+        margin-top:24px;
+        margin-bottom:24px;
+      }
+    }
+  }
+}

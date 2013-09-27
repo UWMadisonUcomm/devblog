@@ -1,18 +1,51 @@
-{% include header.html %}
-	<div id="main" class="group">
-		<div id="primary">
-			<div id="content" role="main">
-						<nav id="nav-above">
-						</nav><!-- #nav-above -->
-	
-							{{content}}
-				
-						<nav id="nav-below">
-						</nav><!-- #nav-above -->
-			</div><!-- #content -->
-		</div><!-- #primary -->
+<!DOCTYPE html>
+<html class="{{page.theme}}">
+  <head>
+    <title>UW UI Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap -->
+    <link href="/css/uw_devblog.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-uw-brand">
+      <div class="container">
+        <a class="navbar-brand" href="/">UW DevBlog</a>
+<!--            <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="3">Link</a></li>
+          </ul>
+        </div>
+     <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>  -->       
+      </div>
+    </div>
+    <div id="sidebar" class=" hidden-xs hidden-sm col-md-2">
+      <div class="row">
+        {% include sidebar.html %}
+      </div>
+    </div>
+    <div id="content" class="col-sm-12 col-md-10">
+      <div class="row">
+        {{ content }}
+      </div>
+    </div>
 
-		<div id="secondary" class="widget-area" role="complementary">
-		</div><!-- #secondary .widget-area -->
-	</div><!-- #main -->
-{% include footer.html %}
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/uw_devblog.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var loc = window.location.pathname;
+
+        $('.navbar-nav > li > a').each(function() {
+          $(this).parent().toggleClass('active', $(this).attr('href') == loc);
+        });
+      });
+    </script>
+  </body>
+</html>

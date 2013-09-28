@@ -2,15 +2,15 @@
 layout: default
 ---
 
-
-<div class="post-list list-group ">
+  <div class="post-list list-group ">
     <article class="col-sm-12">
       <header class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <span class="post-lede">{{ page.lede }}</span>
           <h2 class="post-title">{{ page.title }}</h2>
-          <span class="post-meta">
-            By {{ page.author}} on {{ page.date | date_to_string }}</span>
+          
+          {% include post_meta.html %}
+        
         </div>
         {% if page.featured_image %}
         <div class="post-feat-image col-sm-12">

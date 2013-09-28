@@ -3,14 +3,14 @@
   {% if post.categories != empty %}
     Categories: 
     {% for category in post.categories %}
-      <a href="/category/{{ category }}">{{ category }}</a>, 
+      <a href="/category/{{ category }}">{{ category }}</a>{% if forloop.index < forloop.length %}, {% endif %}
     {% endfor %}
   {% endif %}
 
   {% if post.tags != empty %}
     Tags: 
     {% for tag in post.tags %}
-      <a href="/tag/{{ tag }}">{{ tag }}</a>, 
+      <a href="/tag/{{ tag }}">{{ tag }}</a>{% if forloop.index < forloop.length %}, {% endif %}
     {% endfor %}
   {% endif %}
 </span>

@@ -3,7 +3,7 @@ layout: post
 title:  "Just when you thought you knew everything, a new, more hilarious meme goes viral"
 author: "Vidal"
 date:   2013-09-26 12:01:48
-categories: jekyll update test
+categories: jekyll
 lede: "Awesomeness"
 ---
 

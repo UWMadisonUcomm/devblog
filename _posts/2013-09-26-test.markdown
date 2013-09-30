@@ -3,7 +3,8 @@ layout: post
 title:  "This is a test to see how awesome of bloggers we can be"
 date:   2013-09-26 12:01:48
 author: "Nick G"
-categories: jekyll update test
+categories: jekyll
+tags: design RWD
 lede: "LOL"
 ---
 

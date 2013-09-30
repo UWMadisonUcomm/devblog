@@ -1,0 +1,3 @@
+[submodule "uw_bootstrap_master"]
+	path = _submodules/uw_bootstrap
+	url = git@bitbucket.org:uwmadison_ucomm/uw_bootstrap.git

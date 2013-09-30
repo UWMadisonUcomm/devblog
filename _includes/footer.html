@@ -1,0 +1,14 @@
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/uw_devblog.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var loc = window.location.pathname;
+
+        $('.navbar-nav > li > a').each(function() {
+          $(this).parent().toggleClass('active', $(this).attr('href') == loc);
+        });
+      });
+    </script>
+  </body>
+</html>

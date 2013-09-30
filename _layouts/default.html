@@ -2,28 +2,13 @@
 {% include header.html %}
 
   {% include navbar.html %}
-    <div id="sidebar" class=" hidden-xs hidden-sm col-md-2">
-      <div class="row">
-        {% include sidebar.html %}
-      </div>
-    </div>
-    <div id="content" class="col-sm-12 col-md-10">
-      <div class="row">
-        {{ content }}
-      </div>
-    </div>
 
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/js/uw_devblog.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        var loc = window.location.pathname;
+  {% include sidebar.html %}
 
-        $('.navbar-nav > li > a').each(function() {
-          $(this).parent().toggleClass('active', $(this).attr('href') == loc);
-        });
-      });
-    </script>
-  </body>
-</html>
+  <div id="content" class="col-sm-12 col-md-10">
+    <div class="row">
+      {{ content }}
+    </div>
+  </div>
+
+{% include footer.html %}

@@ -15,7 +15,13 @@
   </header>
   <div class="post-content row">
     <div class="col-sm-8 col-sm-offset-2">
-      {{ post.content }}
+
+      {% if (page.url == '/index.html') %}
+        {{ post.content }}
+      {% else %}
+        {{ content }}
+      {% endif %}
+      
     </div>
   </div>
   <footer class="row">

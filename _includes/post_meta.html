@@ -1,5 +1,6 @@
 <span class="post_meta">
-  By {{ post.author}} on {{ post.date | date: "%b %d, %Y" }}.
+  
+  By {{ post.author }} on {{ post.date | date: "%b %d, %Y" }}.
 
   {% if post.categories != empty %}
     Categories: 
@@ -14,4 +15,5 @@
       <a href="tag/#{{ tag }}">{{ tag }}</a>, 
     {% endfor %}
   {% endif %}
+
 </span>

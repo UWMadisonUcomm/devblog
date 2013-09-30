@@ -2,11 +2,11 @@
 
 ## To install
 
-**install submodules:**
+**Install submodules:**
 
     git submodule update --init --recursive
 
-**install the Node modules (assumes Node has been installed on your machine):**
+**Install the Node modules (assumes Node has been installed on your machine):**
 
     npm install
 

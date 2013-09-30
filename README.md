@@ -4,6 +4,7 @@
 
 1. clone this repositiory
 2. cd into your project
+
 3. install submodules
 
     git submodule update --init --recursive

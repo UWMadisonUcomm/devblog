@@ -6050,7 +6050,7 @@ td.visible-print {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
-.navbar.navbar-uw-brand {
+.navbar {
   background-image: url('/img/uwcrest_web_sm.png');
   background-position: -13px -13px;
   background-repeat: no-repeat;

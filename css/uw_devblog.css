@@ -6095,23 +6095,23 @@ body {
   overflow: scroll;
   padding: 0;
 }
-#content .post-list article {
+#content article {
   padding-top: 24px;
   padding-bottom: 48px;
 }
-#content .post-list article .post-lede {
+#content article .post-lede {
   text-transform: uppercase;
   font-size: 14px;
 }
-#content .post-list article .post-feat-image {
+#content article .post-feat-image {
   max-height: 500px;
   overflow: hidden;
   padding: 24px 0;
 }
-#content .post-list article .post-feat-image img {
+#content article .post-feat-image img {
   padding: 0;
 }
-#content .post-list article .post-content {
+#content article .post-content {
   margin-top: 24px;
   margin-bottom: 24px;
 }

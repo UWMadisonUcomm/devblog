@@ -5,8 +5,11 @@
 1. clone this repositiory
 2. cd into your project
 3. install submodules:
+
     git submodule update --init --recursive
+
 4: install the Node modules (assumes Node has been installed on your machine)
+
     npm install
 
 ## To run your local server

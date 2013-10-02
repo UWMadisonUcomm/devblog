@@ -5966,6 +5966,9 @@ td.visible-print {
   background-size: 50px;
   padding-left: 15px;
 }
+.navbar .navbar-header {
+  margin-left: 0;
+}
 html {
   height: 100%;
 }

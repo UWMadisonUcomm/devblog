@@ -10,7 +10,7 @@ module.exports = function(grunt){
       'affix',
       'collapse'
     ].forEach(function(item){
-      bootstrap_js_files.push('_submodules/bootstrap/js/' + item + '.js');
+      bootstrap_js_files.push('_submodules/uw_bootstrap/vendor/bootstrap/js/' + item + '.js');
     });
 
   grunt.initConfig({
@@ -19,19 +19,19 @@ module.exports = function(grunt){
       submodules: {
         files: [ 
           {
-            src: '_submodules/bootstrap/less/*.less', // bootstrap
+            src: '_submodules/uw_bootstrap/src/less/bootstrap/*.less', // bootstrap
             dest: '_assets/less/bootstrap/less/',
             flatten: true,
             expand: true
           },
           {
-            src: '_submodules/uw_bootstrap/*.less', // uw bootstrap
-            dest: '_assets/less/uw_bootstrap/',
+            src: '_submodules/uw_bootstrap/src/less/*.less', // uw bootstrap
+            dest: '_assets/less/',
             flatten: true,
             expand: true
           },
           {
-            src: '_submodules/uw_bootstrap/img/*', // uw bootstrap images
+            src: '_submodules/uw_bootstrap/src/img/*', // uw bootstrap images
             dest: 'img/',
             flatten: true,
             expand: true

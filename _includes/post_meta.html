@@ -1,6 +1,8 @@
 <span class="post_meta">
 
-  By {{ post.author }} on {{ post.date | date: "%b %d, %Y" }}.
+  {% capture author %}{% if post.author_url == null %} {{post.author}} {% else %} <a href="{{post.author_url}}">{{post.author}}</a> {% endif %} {% endcapture %}
+
+  By {{ author }} on {{ post.date | date: "%b %d, %Y" }}.
 
   {% if post.categories != empty %}
     Categories: 

@@ -59,26 +59,50 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
   - **_config.yml**: your site's main configuration file. Here's where many options (such as the title, permalinks, custom includes and excludes, etc.) are set.
   - **index.html**: your site's main index.html file
 
-> Note that some directories and files have are preceded by an underscore \(\_). This lets Jekyll know that these directories and files should be _excluded_ from the final site. More on that later.  
+> Note that some directories and files are preceded by an underscore \(\_). This lets Jekyll know that these directories and files should be _excluded_ from the final site. 
 
 ### Generate your site
-As you may have noticed, the .html files on the site are all just bits and pieces so far. It's time to generate your site.
+As you may have noticed, the .html files on the site are all just bits and templating pieces so far. To put them together, you need to build the site.
 
 - On your console, tell Jekyll to build the site:
 
 >     ~ $ jekyll build
 
 
-- There should be a new directory on your site, **\_site/**. CD into it.
-- 
+- This adds a new  **\_site/** directory to your project. **This is the actual static site your users will see**. Let's check out its contents:
+  - **css/**: here's where your CSS files are stored.
+  - **jekyll/**: this is where Jekyll stores your posts by default, using an _/update/yyyy/mm/dd/post-title.html_ permalink format. You can change this permalink format in the _config.yml file if you'd like. More on that later.
+  - **index.html**: the fully generated index.html.
 
+- To see your site, go to File > Open in your browser, and select _site/index.html Your new Jekyll site should look like this:
 
+<img class="col-sm-12" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
 
+- Click to see the "Welcome to Jekyll" post:
 
-### Configure it
+<img class="col-sm-12" src="/img/posts/2013-09-30-basic-jekyll/post.png" />
+
 
 ### Write your first post
+
+For now, let's use the default template to create your first post in Jekyll using markdown.
+
+- In your text editor, create a new document, "My first post," and save it in your **\_posts/** directory with a name following the _yyyy-mm-dd-post-title.markdown_ structure, which is required by Jekyll. For example: 
+
+<div class="row text-center">
+  <img src="/img/posts/2013-09-30-basic-jekyll/save_as.png">
+</div>
+
+- Configure your post by adding a [YAML front-matter](http://jekyllrb.com/docs/frontmatter/) header. This is required by Jekyll to process the post as a special file, and also serves as an area for your to create custom variables to be used in the body of your post and throughout the site.
+
+>     ---
+      layout: default
+      title: My First Post
+    ---
+
 ### Make your first template
+
+### Configure it
 
 
 ## References

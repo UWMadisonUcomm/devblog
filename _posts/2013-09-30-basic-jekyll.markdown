@@ -46,7 +46,7 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
 
 >     ~ $ jekyll new mysite
 
-- A new **\_mysite/** directory appears in the new directory. cd into it.
+- A new **mysite/** directory appears in the new directory. cd into it.
 
 
 ### Familiarize yourself with the structure

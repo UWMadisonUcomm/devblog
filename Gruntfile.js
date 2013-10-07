@@ -68,6 +68,4 @@ module.exports = function(grunt){
   // Register tasks
   grunt.registerTask('default', ['uglify', 'less']);
   grunt.registerTask('copy_submodules', ['copy:submodules']);
-
 }
-

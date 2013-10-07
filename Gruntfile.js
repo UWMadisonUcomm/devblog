@@ -32,14 +32,14 @@ module.exports = function(grunt){
           mangle: false
         },
         files: {
-          "js/uw_devblog.js": [bootstrap_js_files, '_assets/js/uw_devblog.js']
+          "js/uw_devblog.js": [bootstrap_js_files, '_assets/highlight.js/highlight.pack.js', '_assets/js/uw_devblog.js']
         }
       }
     },
     less: {
       all: {
         options: {
-          yiucompress: true,
+          yuicompress: true,
           paths: ['_submodules/uw_bootstrap/src/less']
         },
         files: {

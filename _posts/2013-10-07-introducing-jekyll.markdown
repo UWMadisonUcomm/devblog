@@ -208,7 +208,7 @@ Separating HTML templates into includes and layout is a great way to make your c
 {% endhighlight %}
 
 
-### Configure Jekyll
+### Configuring Jekyll
 
 Let's take a look at some configuration options for Jekyll. These are added in the `_config.yml` of your site:
 

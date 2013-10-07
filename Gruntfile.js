@@ -1,35 +1,21 @@
-module.exports = function(grunt){
-  
+module.exports = function(grunt){  
   // Define js scripts to include
-  
-    // Bootstrap
-    var bootstrap_js_files = [];
-    [
-      'transition',
-      'tab',
-      'affix',
-      'collapse'
-    ].forEach(function(item){
-      bootstrap_js_files.push('_submodules/uw_bootstrap/vendor/bootstrap/js/' + item + '.js');
-    });
+  // Bootstrap
+  var bootstrap_js_files = [];
+  [
+    'transition',
+    'tab',
+    'affix',
+    'collapse'
+  ].forEach(function(item){
+    bootstrap_js_files.push('_submodules/uw_bootstrap/vendor/bootstrap/js/' + item + '.js');
+  });
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     copy: {
       submodules: {
         files: [ 
-          {
-            src: '_submodules/uw_bootstrap/src/less/bootstrap/*.less', // bootstrap
-            dest: '_assets/less/bootstrap/less/',
-            flatten: true,
-            expand: true
-          },
-          {
-            src: '_submodules/uw_bootstrap/src/less/*.less', // uw bootstrap
-            dest: '_assets/less/',
-            flatten: true,
-            expand: true
-          },
           {
             src: '_submodules/uw_bootstrap/src/img/*', // uw bootstrap images
             dest: 'img/',
@@ -42,7 +28,7 @@ module.exports = function(grunt){
     uglify: {
       all: {
         options: {
-          beautify: true,
+          beautify: false,
           mangle: false
         },
         files: {
@@ -53,7 +39,8 @@ module.exports = function(grunt){
     less: {
       all: {
         options: {
-          yiucompress: true
+          yiucompress: true,
+          paths: ['_submodules/uw_bootstrap/src/less']
         },
         files: {
           'css/uw_devblog.css': ["_assets/less/uw_devblog.less"]

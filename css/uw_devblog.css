@@ -6025,6 +6025,7 @@ body {
 }
 #content article .post-feat-image img {
   padding: 0;
+  background-color: #eeeeee;
 }
 #content article .post-content {
   margin-top: 24px;

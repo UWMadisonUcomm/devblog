@@ -8,7 +8,7 @@ tags: jekyll cms markdown
 featured_image: "http://jekyllrb.com/img/logo-2x.png"
 ---
 
-And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://www.wordpress.org)), a new alternative (re)emerges: plain-text driven static websites.
+And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://www.wordpress.org)), a new alternative (re-)emerges: plain-text driven static websites.
 
 Enter [Jekyll](http://jekyllrb.com/), a ruby-based, light-weight, markdown-friendly framework for creating static blogs and sites right in your favorite text editor.
 
@@ -62,7 +62,9 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
   - `_config.yml`: your site's main configuration file. Here's where many options (such as the title, permalinks, custom includes and excludes, etc.) are set.
   - `index.html`: your site's main index.html file
 
-> Note that some directories and files are preceded by an underscore (e.g. `_layouts/`). This lets Jekyll know that these directories and files should be _excluded_ from the final site. 
+<div class="alert alert-info">
+<strong>Note:</strong> some directories and files are preceded by an underscore (e.g. <code>_layouts/</code>). This lets Jekyll know that these directories and files should be excluded from the final site. 
+</div>
 
 ### Generate your site
 As you may have noticed, the .html files on the site are all just templating bits and pieces so far. To put them together, you need to build the site. 

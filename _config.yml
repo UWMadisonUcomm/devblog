@@ -1,6 +1,6 @@
 name: UW DevBlog
 markdown: redcarpet
-pygments: true
+pygments: false
 permalink: /blog/:title
 exclude: ['_assets', '_submodules', 'node_modules', 'Gruntfile.js', 'package.json', 'uw_bootstrap']
 tag_page_layout: tag_page

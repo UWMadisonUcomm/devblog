@@ -227,6 +227,7 @@ As a blogging platform at heart, Jekyll wants you to really, _really_ help you b
 ## References
 
 Jekyll is a up-and-coming project, and it's just getting started. Here are some resources to further help you get on it:
+
 - [Jekyll's official site](http://jekyllrb.com/)
 - [Building Static Sites with Jekyll](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)
 - [Learning Jekyll by Example: Build a Jekyll Website, Start to Finish](http://www.andrewmunsell.com/tutorials/jekyll-by-example/index.html)

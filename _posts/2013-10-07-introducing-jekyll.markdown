@@ -79,11 +79,11 @@ As you may have noticed, the .html files on the site are all just templating bit
 
 - To see your site, go to File > Open in your browser, and select `_site/index.html` Your new Jekyll site should look like this:
 
-<img class="col-sm-12" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
+<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
 
 - Click to see the "Welcome to Jekyll" post:
 
-<img class="col-sm-12" src="/img/posts/2013-09-30-basic-jekyll/post.png" />
+<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/post.png" />
 
 ### Speeding up development: build, serve, and track site changes, all at once! 
 To speed up development, Jekyll comes bundled with the [WEBrick](http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick.html) web server, which allows you to create a temporary local server via the `serve` command. Add the `--watch` option, and Jekyll will also watch your changes and rebuild the `_site/` directory automatically.
@@ -142,7 +142,7 @@ I'm alreadys starting to love Jekyll!
 - Save your document.
 - In your browser, go to [http://localhost:4000](http://localhost:4000), and click on the "My first post" link to see your new post:
 
-<img class="col-sm-12" src="/img/posts/2013-09-30-basic-jekyll/my_first_post.png" />
+<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/my_first_post.png" />
 
 ### How templates work
 

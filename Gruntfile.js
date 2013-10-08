@@ -17,6 +17,13 @@ module.exports = function(grunt){
       submodules: {
         files: [ 
           {
+            src: '**/*',
+            dest: '_assets/less/uw_bootstrap',
+            cwd: '_submodules/uw_bootstrap/src/less',
+            flatten: false,
+            expand: true
+          },
+          {
             src: '_submodules/uw_bootstrap/src/img/*', // uw bootstrap images
             dest: 'img/',
             flatten: true,
@@ -39,8 +46,7 @@ module.exports = function(grunt){
     less: {
       all: {
         options: {
-          yuicompress: true,
-          paths: ['_submodules/uw_bootstrap/src/less']
+          yuicompress: true
         },
         files: {
           'css/uw_devblog.css': ["_assets/less/uw_devblog.less"]

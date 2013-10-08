@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Grunt build tool"
-author: "Bryan"
+author: "Bryan Shelton"
 categories: javascript
 lede: "The JavaScript Task Runner"
 ---

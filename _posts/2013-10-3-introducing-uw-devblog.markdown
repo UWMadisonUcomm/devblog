@@ -12,7 +12,7 @@ This is an exciting time to be a developer, with so many new ideas and tools to 
 
 Looking beyond campus, we benefit so much from the open source community — in the tools we use and in learning from others who blog about what they do. We want this to be a place where we can give back a bit. 
 
-## How to participate
+### How to participate
 We want this effort to evolve into a space where other developers around campus can share some of their ideas and solutions to problems. 
 
 If you’re interested in participating in _DevBlog_, please [get in touch](mailto:devblog@uc.wisc.edu) and let us know if you have an idea you’d like to contribute. 

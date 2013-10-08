@@ -6,6 +6,7 @@ date:   2013-10-07 12:01:48
 categories: webdev
 tags: jekyll cms markdown
 featured_image: "http://jekyllrb.com/img/logo-2x.png"
+lede: "Simple Static Sites"
 ---
 
 And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://www.wordpress.org)), a new alternative (re-)emerges: plain-text driven static websites.

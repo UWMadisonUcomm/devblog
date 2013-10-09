@@ -14,7 +14,13 @@ And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://w
 Enter [Jekyll](http://jekyllrb.com/), a Ruby-based, light-weight, Markdown-friendly framework for creating static blogs and sites right in your favorite text editor.
 
 ## So, what is Jekyll?
-In a few words, Jekyll is an open-source framework that helps you generate the static files you need for your site (HTML, CSS and JavaScript). By doing this, you avoid having your site build pages on the fly (like WordPress and Drupal), which can add processing time, make your site slow, and overall, run a bunch of crap that can make your site vulnerable. Also, by having your site be static, you free yourself from the hassle of having to constantly upgrade your CMS or framework (e.g., Rails). [__ED NOTE:__ It might be helpful here to talk about what kinds of sites Jekyll is well-suited for?]
+In a few words, Jekyll is an open-source framework that generates static sites. By doing this, you avoid having your site dynamically build pages on the fly (like WordPress and Drupal), which can add processing time, make your site slow, and overall, run a bunch of crap that can make your site vulnerable. Also, by having your site be static, you free yourself from the hassle of having to constantly upgrade your CMS or framework (e.g., Rails). 
+
+### When to use it
+Jekyll is especially useful for minimal sites that don't need to be updated often, but would benefit from basic templating to make them more manageable in the back end. Note that we loosely define "often" here, as cases can vary wildly.  
+
+For example, if your site requires heavy templating (see the [Wisconsin Institute for Discovery](http://wid.wisc.edu/) website), and a non-technical user friendly admin area for frequent content management, WordPress or Drupal can be a good fit. But if your site is fairly static and doesn't change often (see this [Lakefront Gateway](http://lakefront.wisc.edu/) "brochure" site), then Jekyll might be a better option. Also, if your goal is optimization and low overhead, Jekyll can be especially useful for building heavy-trafficked, massive sites, such as the new [HealthCare.gov](https://www.healthcare.gov/).
+
 
 ## Features
 
@@ -31,13 +37,17 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
   - Since your content is stores in static text files, you don't need to use databases. Isn't that neat?
 
 - GitHub integration
-  - Jekyll is supported by GitHub Pages. In fact, you can get your own, [free site hosted in GitHub using Jekyll as your templating platform](https://help.github.com/articles/using-jekyll-with-pages)
+  - Jekyll is supported by GitHub Pages. In fact, you can get your own [free site hosted in GitHub using Jekyll as your templating platform](https://help.github.com/articles/using-jekyll-with-pages).
 
 
 ## Getting started
 
+<div class="alert alert-info">
+  <strong>Note</strong>: The following instructions are for Max OS X / *nix-based systems, as Jekyll does not officially support documentation for Windows. For instructions on how to use Jekyll on Windows, please see this article on <a class="alert-link" href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" >Running Jekyll on Windows</a> by <a class="alert-link" href="http://www.madhur.co.in/">Madhur Ahuja</a>.
+</div>
+
 ### Install Jekyll
-- Open Terminal in your computer [__ED NOTE:__ need to address Windows here; this URL is the page Jekyll refers Windowsto. Jekyll does not officially document using Windows ]
+- Open Terminal in your computer.
 - Install the Jekyll gem
 
 ```bash
@@ -47,14 +57,14 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
 ### Create your first site
 
 - Go to a directory where you want your site to reside (e.g. ~/Sites/)
-- Create your jekyll site
+- Create your Jekyll site
 
 ```bash
 ~ $ jekyll new mysite
 ```
 
 
-- A new `mysite/` directory appears in the new directory. cd into it.
+- A new `mysite/` directory appears in the new directory. `cd` into it.
 
 
 ### Familiarize yourself with the structure
@@ -85,13 +95,8 @@ As you may have noticed, the .html files on the site are all just templating bit
   - `jekyll/`: this is a directory for posts categorized as "jekyll" (in this case, containing only the sample post "Welcome to Jekyll") 
   - `index.html`: the fully generated index.html.
 
-- To see your site, go to File > Open in your browser, and select `_site/index.html` Your new Jekyll site should look like this: [__ED NOTE:__ Opening a Jekyll site via the file system is problematic since the src references are root-level, so CSS does not load and links do not work. I think you need to just jump straight to having the user run jekyll serve]
+Although the `build` command generates the `_site/` directory, you would have to run it every time you make changes in order to regenerate it. Not so fun. But fear not: we'll deal with this with a single command. Read on!
 
-<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
-
-- Click to see the "Welcome to Jekyll" post:
-
-<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/post.png" />
 
 ### Speeding up development: build, serve, and track site changes, all at once! 
 To speed up development, Jekyll comes bundled with the [WEBrick](http://www.ruby-doc.org/stdlib-2.0/libdoc/webrick/rdoc/WEBrick.html) web server, which allows you to create a temporary local server via the `serve` command. Add the `--watch` option, and Jekyll will also watch your changes and rebuild the `_site/` directory automatically.
@@ -104,7 +109,16 @@ To speed up development, Jekyll comes bundled with the [WEBrick](http://www.ruby
 ```
 
 - In your browser, go to [http://localhost:4000](http://localhost:4000) to see your site.
+
+<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
+
+- Click to see the "Welcome to Jekyll" post:
+
+<img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/post.png" />
+
+
 - From now on, any changes to your files will rebuild your site. 
+
 
 
 ### Write your first post
@@ -180,7 +194,7 @@ Let's work on an example to see how includes work. Let's say you want to move th
 - In your project directory, create a new directory, `_includes/`
 - In `_includes/`, create a new HTML file, `header.html` and open it
 - In your text editor, open the `_layouts/default.html` file
-- Find the `<div>` element with class "header" (`div.header` from now on) and cut it (lines 20-23 ) [__ED NOTE:__ This was lines 19-22 for me FWIW]
+- Find the `<div>` element with class "header" (`div.header` from now on) and cut it.
 - Switch to the open `header.html` file and paste `div.header`'s HTML code.
 - Save header.html
 - Switch back to `_layouts/default.html`. 
@@ -232,7 +246,7 @@ See the [configuration options](http://jekyllrb.com/docs/configuration/) page in
 
 ### Migrating your blog.
 
-As a blogging platform at heart, Jekyll wants to really, _really_ help you blog. So, if you have your blog on a different platform (WordPress, Drupal, MovableType, etc.), there are [several options](http://jekyllrb.com/docs/migrations/) to do so. I migrated one of my blogs from Wordpress, and it was pretty seamless (warning though: you may need to still do some cleanup within the body of your posts, especially if yours has heavy use of shortcodes).
+As a blogging platform at heart, Jekyll wants to really, _really_ help you blog. So, if you have your blog on a different platform (WordPress, Drupal, MovableType, etc.), there are [several options](http://jekyllrb.com/docs/migrations/) to do so. I migrated one of my blogs from WordPress, and it was pretty seamless (warning though: you may need to still do some cleanup within the body of your posts to allow Markdown to be rendered correctly, especially if yours has heavy use of shortcodes).
 
 
 ## References

@@ -62,9 +62,3 @@ When the device is returned the researchers export the data as previously descri
     <span class="icon-next"></span>
   </a>
 </div>
-
-<script lang="javascript">
-        $(function() {
-            $('#screenShotCarousel').carousel();
-        });
- </script>

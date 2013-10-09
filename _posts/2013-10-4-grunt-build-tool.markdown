@@ -2,7 +2,8 @@
 layout: post
 title:  "The Grunt build tool"
 author: "Bryan Shelton"
-categories: javascript
+categories: [ javascript, webdev ]
+tags: [ grunt, javascript, "build tool" ]
 lede: "A Javascript build tool"
 ---
 Grunt is a very flexible build tool, or task runner, for Node.js. Some common uses for Grunt include:

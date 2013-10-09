@@ -17,7 +17,9 @@ Enter [Jekyll](http://jekyllrb.com/), a Ruby-based, light-weight, Markdown-frien
 In a few words, Jekyll is an open-source framework that generates static sites. By doing this, you avoid having your site dynamically build pages on the fly (like WordPress and Drupal), which can add processing time, make your site slow, and overall, run a bunch of crap that can make your site vulnerable. Also, by having your site be static, you free yourself from the hassle of having to constantly upgrade your CMS or framework (e.g., Rails). 
 
 ### When to use it
-Jekyll is especially useful for minimal sites that don't need to be updated often ("often" being loosely defined here, as situations may vary), but would benefit from basic templating to make them more manageable in the back end. For example, if your site requires heavy templating (see the [Wisconsin Institute for Discovery](http://wid.wisc.edu/) website), and a non-technical user friendly admin area for frequent content management, WordPress or Drupal can be a good fit. But if your site is fairly static and doesn't change often (see this [Lakefront Gateway](http://lakefront.wisc.edu/) website), then Jekyll might be a better option. Also, if your goal is optimization and low overhead, Jekyll can be especially useful for building heavy-trafficked, massive sites, such as the new [HealthCare.gov](https://www.healthcare.gov/).
+Jekyll is especially useful for minimal sites that don't need to be updated often, but would benefit from basic templating to make them more manageable in the back end. Note that we loosely define "often" here, as cases can vary wildly.  
+
+For example, if your site requires heavy templating (see the [Wisconsin Institute for Discovery](http://wid.wisc.edu/) website), and a non-technical user friendly admin area for frequent content management, WordPress or Drupal can be a good fit. But if your site is fairly static and doesn't change often (see this [Lakefront Gateway](http://lakefront.wisc.edu/) "brochure" site), then Jekyll might be a better option. Also, if your goal is optimization and low overhead, Jekyll can be especially useful for building heavy-trafficked, massive sites, such as the new [HealthCare.gov](https://www.healthcare.gov/).
 
 
 ## Features
@@ -41,7 +43,7 @@ Jekyll is especially useful for minimal sites that don't need to be updated ofte
 ## Getting started
 
 <div class="alert alert-info">
-  <strong>Note</strong>: The following instructions are for Max OS X / *nix-based systems, as Jekyll does not officially support documentation for Windows. For instructions on how to use Jekyll on Windows, please see this article by <a class="alert-link" href="http://www.madhur.co.in/">Madhur Ahuja</a> on <a class="alert-link" href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" >Running Jekyll on Windows</a>.
+  <strong>Note</strong>: The following instructions are for Max OS X / *nix-based systems, as Jekyll does not officially support documentation for Windows. For instructions on how to use Jekyll on Windows, please see this article on <a class="alert-link" href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" >Running Jekyll on Windows</a> by <a class="alert-link" href="http://www.madhur.co.in/">Madhur Ahuja</a>.
 </div>
 
 ### Install Jekyll

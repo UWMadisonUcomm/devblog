@@ -35,6 +35,7 @@ module Jekyll
       self.data['header'] = "#{prefix}#{obj.capitalize }"
 
       self.data['title'] = "#{self.data['header']}: "
+      self.data['archive_page'] = true
     end
   end
 

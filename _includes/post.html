@@ -17,12 +17,11 @@
     <div class="col-sm-8 col-sm-offset-2">
       {% if (page.url == '/index.html') %}
         {{ post.content }}
-      {% elsif (page.url contains '/category/' or page.url contains '/tag/') %}
+      {% elsif page.archive_page %}
         {{ post.content | truncatewords: 50 }}
       {% else %}
         {{ content }}
       {% endif %}
-      
     </div>
   </div>
   <footer class="row">

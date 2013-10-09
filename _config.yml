@@ -3,6 +3,5 @@ markdown: redcarpet
 pygments: false
 permalink: /blog/:title
 exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'Gemfile*', 'README.md']
-tag_page_layout: tag_page
-tag_page_dir: tag 
+tag_dir: tag
 category_dir: category

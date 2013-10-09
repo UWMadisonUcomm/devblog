@@ -41,12 +41,12 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'archive_page'
-        dir = 'category'
+        dir = site.config["category_dir"] || 'category'
         site.categories.keys.each do |category|
           site.pages << TaxonomyPage.new(site, site.source, File.join(dir, category), category, 'category')
         end
 
-        dir = 'tag'
+        dir = site.config["tag_dir"] || 'tag'
         site.tags.keys.each do |tag|
           site.pages << TaxonomyPage.new(site, site.source, File.join(dir, tag), tag, 'tag')
         end

@@ -58,3 +58,5 @@ grunt.registerTask('bryan', function() {
   },2000);
 });
 ```
+
+If you pass false to the done callback, Grunt will assume the task has failed.

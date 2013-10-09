@@ -2,7 +2,7 @@
   <header class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <span class="post-lede">{{ post.lede }}</span>
-      <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {% include post_meta.html %}
     </div>
     {% if post.featured_image %}

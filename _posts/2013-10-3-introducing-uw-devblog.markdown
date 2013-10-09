@@ -6,7 +6,7 @@ lede: "For starters&#8230;"
 ---
 Welcome to _UW DevBlog_, a space for sharing best practices, ideas and tools with the UW–Madison campus developer community.
 
-Initially, this will be a platform for University Communications and DoIT’s mobile development group to talk a little bit about the work we’re doing and how we do it. 
+Initially, this will be a platform for University Communications and DoIT’s [Web and Mobile Solutions group](https://www.doit.wisc.edu/about/departments/#adi) to talk a little bit about the work we’re doing and how we do it. 
 
 This is an exciting time to be a developer, with so many new ideas and tools to explore all the time. As we move about campus, we often find other developers doing interesting, innovative things that we wish we had known about earlier. There’s lots to learn, and we can all learn from each other.
 

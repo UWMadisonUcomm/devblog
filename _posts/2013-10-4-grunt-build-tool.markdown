@@ -3,7 +3,6 @@ layout: post
 title: The Grunt build tool
 author: Bryan Shelton
 categories: 
-  - javascript
   - webdev
 tags: 
   - grunt

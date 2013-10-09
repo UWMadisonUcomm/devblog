@@ -1,21 +1,9 @@
-module.exports = function(grunt){  
-  // Define js scripts to include
-  // Bootstrap
-  var bootstrap_js_files = [];
-  [
-    'transition',
-    'tab',
-    'affix',
-    'collapse'
-  ].forEach(function(item){
-    bootstrap_js_files.push('_submodules/uw_bootstrap/vendor/bootstrap/js/' + item + '.js');
-  });
-
+module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     copy: {
       submodules: {
-        files: [ 
+        files: [
           {
             src: '**/*',
             dest: '_assets/less/uw_bootstrap',
@@ -39,7 +27,7 @@ module.exports = function(grunt){
           mangle: false
         },
         files: {
-          "js/uw_devblog.js": [bootstrap_js_files, '_assets/highlight.js/highlight.pack.js', '_assets/js/uw_devblog.js']
+          "js/uw_devblog.js": ['_assets/highlight.js/highlight.pack.js','_assets/js/bootstrap.js', '_assets/js/uw_devblog.js']
         }
       }
     },

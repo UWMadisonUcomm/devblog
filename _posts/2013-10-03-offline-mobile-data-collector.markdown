@@ -4,8 +4,8 @@ title:  "Offline Mobile Research Study Data Collector"
 date:   2013-10-03 14:17:00
 author: Brad Leege
 author_url: https://twitter.com/bradleege
-categories: Mobile
-tags: mobile ios ipod mobileweb jquery jquerymobile research datacollection webdev appcache html5 javascript
+categories: [mobile, webdev]
+tags: [mobile, ios, ipod, mobileweb, jquery, jquerymobile, research computing, data collection, appcache, html5, javascript]
 lede: "Offline Mobile Web"
 ---
 

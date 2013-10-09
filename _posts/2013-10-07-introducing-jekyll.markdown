@@ -4,7 +4,7 @@ title:  Introducing Jekyll
 author: "Vidal Quevedo"
 date:   2013-10-07 12:01:48
 categories: webdev
-tags: jekyll cms markdown
+tags: [jekyll, CMS, markdown]
 featured_image: "http://jekyllrb.com/img/logo-2x.png"
 lede: "Simple Static Sites"
 ---

@@ -24,3 +24,47 @@ The Mobile Web application is able to "run" locally on the iPod Touch without In
 The daily survey data is persisted locally on the iPod Touch using Mobile Safari's built in Web SQL Database.  
 
 When the device is returned the researchers export the data as previously described and erase Safari's cache.  Once the cache is erased, the device is ready to be used by another study participant.
+
+<div id="screenShotCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#screenShotCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#screenShotCarousel" data-slide-to="1"></li>
+    <li data-target="#screenShotCarousel" data-slide-to="2"></li>
+    <li data-target="#screenShotCarousel" data-slide-to="3"></li>
+    <li data-target="#screenShotCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+		<img src="/img/posts/2013-10-03-offline-mobile-data-collector/dc-1.jpg" />
+    </div>
+    <div class="item">
+		<img src="/img/posts/2013-10-03-offline-mobile-data-collector/dc-2.jpg" />
+    </div>
+    <div class="item">
+		<img src="/img/posts/2013-10-03-offline-mobile-data-collector/dc-3.jpg" />
+    </div>
+    <div class="item">
+		<img src="/img/posts/2013-10-03-offline-mobile-data-collector/dc-4.jpg" />
+    </div>
+    <div class="item">
+		<img src="/img/posts/2013-10-03-offline-mobile-data-collector/dc-5.jpg" />
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+
+<script lang="javascript">
+        $(function() {
+            $('#screenShotCarousel').carousel();
+        });
+ </script>

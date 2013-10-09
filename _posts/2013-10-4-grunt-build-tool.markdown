@@ -10,7 +10,7 @@ Grunt is a very flexible build tool, or task runner, for Node.js. Some common us
   * Building and minifying Less/Sass
   * Compiling Coffeescript
   * Minifying Javascript assets
-  * Running test suites of JS Hint
+  * Running test suites or JS Hint
 
 ### A note on asynchronous tasks ###
 

@@ -41,14 +41,19 @@ In a few words, Jekyll is an open-source framework that helps you generate the s
 - Open Terminal in your computer
 - Install the Jekyll gem
 
-        ~ $ gem install jekyll
+```bash
+~ $ gem install jekyll
+```
 
 ### Create your first site
 
 - Go to a directory where you want your site to reside (e.g. ~/Sites/)
 - Create your jekyll site
 
-        ~ $ jekyll new mysite
+```bash
+~ $ jekyll new mysite
+```
+
 
 - A new `mysite/` directory appears in the new directory. cd into it.
 
@@ -72,8 +77,9 @@ As you may have noticed, the .html files on the site are all just templating bit
 
 - In your Terminal, type:
 
-        ~ $ jekyll build
-
+```bash
+~ $ jekyll build
+```
 
 - This adds a new  `_site/` directory to your project. **This is the actual static site your users will see**. Let's check out its contents:
   - `css/`: here's where your CSS files are stored.
@@ -94,8 +100,9 @@ To speed up development, Jekyll comes bundled with the [WEBrick](http://www.ruby
 
 - In your Terminal, type:
 
-        ~ $ jekyll serve --watch
-
+```bash
+~ $ jekyll serve --watch
+```
 
 - In your browser, go to [http://localhost:4000](http://localhost:4000) to see your site.
 - From now on, any changes to your files will rebuild your site. 
@@ -116,13 +123,13 @@ Now that our development environment is set, let's use the default template to c
 - Configure your post by adding a [YAML front-matter](http://jekyllrb.com/docs/frontmatter/) header. This is required by Jekyll to process the post as a special file, and also serves as an area for you to create custom variables to be used in the body of your post and throughout the site. Let's just add the `layout`, `title`, and `categories` for now:
 
 
-{% highlight console %}
+```markdown
 ---
 layout: default
 title: "My first post"
 categories: practice test
 ---
-{% endhighlight %}
+```
 
 
 - Save your document. Notice how Jekyll rebuilt the `_site/` directory's internal structure to add the `practice/test/` category subdirectories to accommodate your new post.
@@ -132,7 +139,7 @@ categories: practice test
 
 - Below the front-matter header, add some basic markdown content:
 
-{% highlight console %}
+```markdown
 ---
 layout: default
 title: "My first post"
@@ -140,7 +147,8 @@ title: "My first post"
 
 # This is my first post
 I'm alreadys starting to love Jekyll!
-{% endhighlight %}
+
+```
 
 - Save your document.
 - In your browser, go to [http://localhost:4000](http://localhost:4000), and click on the "My first post" link to see your new post:
@@ -153,13 +161,13 @@ Let's take a look at the templating structure of Jekyll.
 
 - First, recall that we used a Front Matter block to define the basic configuration of our test post (this also applies to pages):
 
-{% highlight console %}
+```markdown
 ---
 layout: default
 title: "My first post"
 categories: practice test
 ---
-{% endhighlight %}
+```
 
 The `layout: default` line tells Jekyll to use the `layouts/default.html` as the template for this page. Following this convention, you can create new templates by adding .html files to the `layouts/` directory. For example, you by adding a `home.html` template, you could use it in your files by adding `layout: home` to their Front Matter header.
 
@@ -179,18 +187,19 @@ Let's work on an example to see how includes work. Let's say you want to move th
 - Switch back to `_layouts/default.html`. 
 - Where the div.header element used to be, use the `{% include %}` tag to include the `navbar.html` partial:
 
-{% highlight html %}
-
+```
   {{ "{% include header.html "}}%}
-
-{% endhighlight %}
+```
 
 - Save `_layouts/default.html`
 - Go to [http://localhost:4000](http://localhost:4000). It should work exactly as it did before. Congratulations, you have seamlessly included a file.
 
 Separating HTML templates into includes and layout is a great way to make your code more reusable and your site more manageable. You could go all the way and make your template files nothing but a bunch of includes to keep their structure cleaner. For example, the `default.html` file for this website looks like this:
 
-{% highlight html %}
+```markdown
+
+  <!-- Example: the default.html template file 
+  for the UW-Madison Devblog --> 
 
   {{ "{% include header.html " }}%}
 
@@ -206,7 +215,7 @@ Separating HTML templates into includes and layout is a great way to make your c
 
   {{ "{% include footer.html "}}%}
 
-{% endhighlight %}
+```
 
 
 ### Configuring Jekyll

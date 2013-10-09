@@ -21,6 +21,22 @@ Grunt is a very flexible build tool, or task runner, for Node.js. Some common us
 
 Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install and get up and running with Grunt.
 
+## An example web project ##
+
+A common use of Grunt for me is to build out less and javascript files for production.
+
+Let's say we have a folder structure that contains multiple less files, and multiple javascript files. Something like this:
+
+	-- less/
+    	-- project.less
+        -- lib/
+        	-- mixins.less
+            -- variables.less
+     -- javascripts/
+     	-- main.js
+        -- lib/
+        	-- cool_library.js
+
 ## A note on asynchronous grunt tasks ##
 
 Grunt assumes your tasks are running synchronously. The following grunt task will **not** output "1 second mark."

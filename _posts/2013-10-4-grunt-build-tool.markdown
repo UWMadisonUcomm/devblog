@@ -14,8 +14,8 @@ published: true
 
 Grunt is a very flexible build tool, or task runner, for Node.js. Some common uses of Grunt are:
 
-- Concatonating and minifying javascript source files into a singule distribution file.
-- Compiling less or sass assets into CSS for production
+- Concatonating and minifying javascript source files into a singule distribution file
+- Compiling Less or Sass
 - Compiling Coffeescript
 - Custom project build tasks
 

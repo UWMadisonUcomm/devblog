@@ -9,36 +9,35 @@ featured_image: "http://jekyllrb.com/img/logo-2x.png"
 lede: "Simple Static Sites"
 ---
 
-And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://www.wordpress.org)), a new alternative (re-)emerges: plain-text driven static websites.
+And so, in the world of bloated CMSs (we're looking at you, [WordPress](http://www.wordpress.org)), a new alternative (re-)emerges: plain-text-driven, static websites.
 
-Enter [Jekyll](http://jekyllrb.com/), a ruby-based, light-weight, markdown-friendly framework for creating static blogs and sites right in your favorite text editor.
+Enter [Jekyll](http://jekyllrb.com/), a Ruby-based, light-weight, Markdown-friendly framework for creating static blogs and sites right in your favorite text editor.
 
 ## So, what is Jekyll?
-In a few words, Jekyll is an open-source framework that helps you generate the static files you need for your site (HTML, CSS and JavaScript). By doing this, you avoid having your site build pages on the fly (like WordPress and Drupal), which can add processing time, make your site slow, and overall, run a bunch of crap that can make your site vulnerable. Also, by having your site be static, you free yourself from the hassle of having to constantly upgrade your CMS or platform (e.g., Rails).
+In a few words, Jekyll is an open-source framework that helps you generate the static files you need for your site (HTML, CSS and JavaScript). By doing this, you avoid having your site build pages on the fly (like WordPress and Drupal), which can add processing time, make your site slow, and overall, run a bunch of crap that can make your site vulnerable. Also, by having your site be static, you free yourself from the hassle of having to constantly upgrade your CMS or framework (e.g., Rails). [__ED NOTE:__ It might be helpful here to talk about what kinds of sites Jekyll is well-suited for?]
 
 ## Features
 
-
 - Markdown
-  - You can use [Markdown](http://daringfireball.net/projects/markdown/), a text-to-html converter, to write your posts. The beauty of markdown isn't only that it frees you from having to deal with HTML tags, but it makes your text editor become, well, a _text editor_.
+  - You can use [Markdown](http://daringfireball.net/projects/markdown/), a text-to-html converter, to write your posts. The beauty of Markdown isn't only that it frees you from having to deal with HTML tags, but it makes your text editor become, well, a _text editor_.
 
 - Basic templating
   - Jekyll supports (in fact, enforces) the use of templates to simplify the management of your files. It also neatly separates your posts, so you can focus on your content right away.
 
-- Liquid Markup
-  - Need to generate some lists, include files, and add some conditionals? No problem: Jekyll uses [Liquid Markup](http://wiki.shopify.com/Liquid), a simple markup language that allows you to build simple structures and display content.
+- Liquid template engine
+  - Need to generate some lists, include files, and add some conditionals? No problem: Jekyll uses the [Liquid template engine](http://wiki.shopify.com/Liquid), a simple language that allows you to build simple structures and display content.
 
 - No databases
   - Since your content is stores in static text files, you don't need to use databases. Isn't that neat?
 
-- GitHub Integration
-  - Jekyll is supported by GitHub pages. In fact, you can get your own, [free site hosted in GitHub using Jekyll as your templating platform](https://help.github.com/articles/using-jekyll-with-pages)
+- GitHub integration
+  - Jekyll is supported by GitHub Pages. In fact, you can get your own, [free site hosted in GitHub using Jekyll as your templating platform](https://help.github.com/articles/using-jekyll-with-pages)
 
 
 ## Getting started
 
 ### Install Jekyll
-- Open Terminal in your computer
+- Open Terminal in your computer [__ED NOTE:__ need to address Windows here; this URL is the page Jekyll refers Windowsto. Jekyll does not officially document using Windows ]
 - Install the Jekyll gem
 
 ```bash
@@ -86,7 +85,7 @@ As you may have noticed, the .html files on the site are all just templating bit
   - `jekyll/`: this is a directory for posts categorized as "jekyll" (in this case, containing only the sample post "Welcome to Jekyll") 
   - `index.html`: the fully generated index.html.
 
-- To see your site, go to File > Open in your browser, and select `_site/index.html` Your new Jekyll site should look like this:
+- To see your site, go to File > Open in your browser, and select `_site/index.html` Your new Jekyll site should look like this: [__ED NOTE:__ Opening a Jekyll site via the file system is problematic since the src references are root-level, so CSS does not load and links do not work. I think you need to just jump straight to having the user run jekyll serve]
 
 <img class="col-sm-12 img-responsive" src="/img/posts/2013-09-30-basic-jekyll/home.png" />
 
@@ -112,7 +111,7 @@ To speed up development, Jekyll comes bundled with the [WEBrick](http://www.ruby
 
 Now that our development environment is set, let's use the default template to create your first post in Jekyll using markdown.
 
-- In your text editor, create a new document, "My first post," and save it in your `_posts/` directory with a name following the _yyyy-mm-dd-post-title.markdown_ structure, which is required by Jekyll. For example: 
+- In your text editor, create a new document and save it in your `_posts/` directory with a name following the _yyyy-mm-dd-post-title.markdown_ structure, which is required by Jekyll. For example: 
 
 <div class="row text-center">
   <img src="/img/posts/2013-09-30-basic-jekyll/save_as.png">
@@ -135,7 +134,7 @@ categories: practice test
 - Save your document. Notice how Jekyll rebuilt the `_site/` directory's internal structure to add the `practice/test/` category subdirectories to accommodate your new post.
 
 
-#### Add some content using markdown
+#### Add some content using Markdown
 
 - Below the front-matter header, add some basic markdown content:
 
@@ -172,20 +171,20 @@ categories: practice test
 The `layout: default` line tells Jekyll to use the `layouts/default.html` as the template for this page. Following this convention, you can create new templates by adding .html files to the `layouts/` directory. For example, you by adding a `home.html` template, you could use it in your files by adding `layout: home` to their Front Matter header.
 
 ### Including files
-Jekyll supports includes to create smaller pieces of code to display specific content (similar to partials in Rails). To do this, you need to create an `_includes/` directory where these files will be stored. 
+Jekyll supports includes to create smaller pieces of code to display specific parts of your template (e.g. a page header and footer). To do this, you need to create an `_includes/` directory where these files will be stored. 
 
 #### Move the default template's .header element to its own file and include it in the layout
 
 Let's work on an example to see how includes work. Let's say you want to move the default template's "header" containing the navigation bar to its own file, so you don't have to repeat this code in subsequent templates. Here's how you can do it:
 
-- In `_sites/`, create a new directory, `_includes/`
+- In your project directory, create a new directory, `_includes/`
 - In `_includes/`, create a new HTML file, `header.html` and open it
 - In your text editor, open the `_layouts/default.html` file
-- Find the `<div>` element with class "header" (`div.header` from now on) and cut it (lines 20-23 )
+- Find the `<div>` element with class "header" (`div.header` from now on) and cut it (lines 20-23 ) [__ED NOTE:__ This was lines 19-22 for me FWIW]
 - Switch to the open `header.html` file and paste `div.header`'s HTML code.
 - Save header.html
 - Switch back to `_layouts/default.html`. 
-- Where the div.header element used to be, use the `{% include %}` tag to include the `navbar.html` partial:
+- Where the div.header element used to be, use the &#123;&#37; include &#37;&#125; tag to include the `navbar.html` partial:
 
 ```
   {{ "{% include header.html "}}%}
@@ -233,7 +232,7 @@ See the [configuration options](http://jekyllrb.com/docs/configuration/) page in
 
 ### Migrating your blog.
 
-As a blogging platform at heart, Jekyll wants you to really, _really_ help you blog. So, if you have your blog on a different platform (WordPress, Drupal, MovableType, etc.), there are [severa options](http://jekyllrb.com/docs/migrations/) to do so. I migrated one of my blogs from WP, and it was pretty seamless (warning though: you may need to still do some cleanup within the body of your posts, especially if your does heavy use of shortcodes)
+As a blogging platform at heart, Jekyll wants to really, _really_ help you blog. So, if you have your blog on a different platform (WordPress, Drupal, MovableType, etc.), there are [several options](http://jekyllrb.com/docs/migrations/) to do so. I migrated one of my blogs from Wordpress, and it was pretty seamless (warning though: you may need to still do some cleanup within the body of your posts, especially if yours has heavy use of shortcodes).
 
 
 ## References

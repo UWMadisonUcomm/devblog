@@ -2,9 +2,9 @@
 layout: post
 title: The Grunt build tool
 author: Bryan Shelton
-categories: 
+categories:
   - webdev
-tags: 
+tags:
   - grunt
   - javascript
   - build tool
@@ -18,10 +18,10 @@ Grunt is a very flexible build tool, or task runner, for Node.js. Some common us
   - Compiling Coffeescript
   - Minifying Javascript assets
   - Running test suites or JS Hint
- 
+
 Updating this from prose.io. I promise to start writing real content very soon.
 
-### A note on asynchronous grunt tasks ###
+## A note on asynchronous grunt tasks ##
 
 Grunt assumes your tasks are running synchronously. The following grunt task will **not** output "1 second mark."
 

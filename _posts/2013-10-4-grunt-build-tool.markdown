@@ -2,9 +2,9 @@
 layout: post
 title: The Grunt build tool
 author: Bryan Shelton
-categories:
+categories: 
   - webdev
-tags:
+tags: 
   - grunt
   - javascript
   - build tool
@@ -12,14 +12,14 @@ lede: A Javascript build tool
 published: true
 ---
 
-Grunt is a very flexible build tool, or task runner, for Node.js. Some common uses for Grunt include:
+Grunt is a very flexible build tool, or task runner, for Node.js. Some common uses of Grunt are:
 
-  - Building and minifying Less/Sass
-  - Compiling Coffeescript
-  - Minifying Javascript assets
-  - Running test suites or JS Hint
+- Concatonating and minifying javascript source files into a singule distribution file.
+- Compiling less or sass assets into CSS for production
+- Compiling Coffeescript
+- Custom project build tasks
 
-Updating this from prose.io. I promise to start writing real content very soon.
+Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install and get up and running with Grunt.
 
 ## A note on asynchronous grunt tasks ##
 

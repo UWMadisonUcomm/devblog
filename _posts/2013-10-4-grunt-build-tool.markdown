@@ -27,15 +27,17 @@ A common use of Grunt for me is to build out less and javascript files for produ
 
 Let's say we have a folder structure that contains multiple less files, and multiple javascript files. Something like this:
 
-	-- less/
-    	-- project.less
-        -- lib/
-        	-- mixins.less
-            -- variables.less
-     -- javascripts/
-     	-- main.js
-        -- lib/
-        	-- cool_library.js
+```xml
+-- less/
+    -- project.less
+    -- lib/
+        -- mixins.less
+        -- variables.less
+ -- javascripts/
+    -- main.js
+    -- lib/
+        -- cool_library.js
+```
 
 ## A note on asynchronous grunt tasks ##
 

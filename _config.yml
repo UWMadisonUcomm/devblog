@@ -2,7 +2,7 @@ name: UW DevBlog
 markdown: redcarpet
 pygments: false
 permalink: /blog/:title
-exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'Gemfile*', 'README.md']
+exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'Gemfile*', 'README.md', '/vendor']
 tag_dir_name: tag
 category_dir_name: category
 tag_title_prefix: 'Tag: '

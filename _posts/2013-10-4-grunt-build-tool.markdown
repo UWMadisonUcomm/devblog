@@ -97,40 +97,9 @@ Voila!
 ## Watch if fly!
 **-ED: talk about the watch task**
 
-
-## A note on asynchronous grunt tasks
-
-Grunt assumes your tasks are running synchronously (**-ED: what do you mean (some people still don't get that JS is asynchronous by nature)?**). **-ED: This is important to keep in mind because...**.
-
-The following grunt task will **not** output "1 second mark."
-
-```JavaScript
-grunt.registerTask('bryan', function() {
-  setTimeout(function() {
-    console.log('1 second mark');
-  },1000);
-});
-```
-
-To let Grunt know your task is running asynchronously, call the async() method on the task. This will return a callback you can call when your task is finished. If you don't call the done callback, grunt seems to still wait until nothing in your task is waiting. I think it's better practice to call done() when your task is complete.
-
-The following task will output "1 second mark" and finish.
-
-```JavaScript
-grunt.registerTask('bryan', function() {
-  var done = this.async();
-  setTimeout(function() {
-    console.log('1 second mark');
-    done();
-  },1000);
-});
-```
-_Passing false to the done() callback will tell Grunt the task has failed._
-
 **-ED: closing**
 ## talk about why Grunt is such a cool tool to learn at this point
 - it's becoming the default task running tool for many projects, including Bootstrap (link to it), replacing other, more complicated task runners
 - it's easier to use
 - it has an active community with new contribs every day (link to contribs)
 - saves time, etc
-

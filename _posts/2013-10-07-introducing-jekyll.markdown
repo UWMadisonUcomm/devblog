@@ -34,7 +34,7 @@ For example, if your site requires heavy templating (see the [Wisconsin Institut
   - Need to generate some lists, include files, and add some conditionals? No problem: Jekyll uses the [Liquid template engine](http://wiki.shopify.com/Liquid), a simple language that allows you to build simple structures and display content.
 
 - No databases
-  - Since your content is stores in static text files, you don't need to use databases. Isn't that neat?
+  - Since your content is stored in static text files, you don't need to use databases. Isn't that neat?
 
 - GitHub integration
   - Jekyll is supported by GitHub Pages. In fact, you can get your own [free site hosted in GitHub using Jekyll as your templating platform](https://help.github.com/articles/using-jekyll-with-pages).

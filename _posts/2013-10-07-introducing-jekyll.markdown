@@ -182,7 +182,7 @@ categories: practice test
 ---
 ```
 
-The `layout: default` line tells Jekyll to use the `layouts/default.html` as the template for this page. Following this convention, you can create new templates by adding .html files to the `layouts/` directory. For example, you by adding a `home.html` template, you could use it in your files by adding `layout: home` to their Front Matter header.
+The `layout: default` line tells Jekyll to use the `layouts/default.html` file as the template for this page. Following this convention, you can create new templates by adding .html files to the `layouts/` directory. For example, by adding a `home.html` template, you could use it in your files by adding `layout: home` line to their Front Matter header.
 
 ### Including files
 Jekyll supports includes to create smaller pieces of code to display specific parts of your template (e.g. a page header and footer). To do this, you need to create an `_includes/` directory where these files will be stored. 

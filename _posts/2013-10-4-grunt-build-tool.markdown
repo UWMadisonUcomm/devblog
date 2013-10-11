@@ -12,18 +12,16 @@ lede: A JavaScript build tool
 published: true
 ---
 
-Grunt is a very flexible build tool, or task runner, for Node.js **-ED: (what's a build tool/task runner? what does/can it help me do? why are they cool for me as a developer?)**.
+Grunt is a very flexible build tool, or task runner, for Node.js. A build tool is something that helps automate repetitive tasks in a project.
 
+## A few common uses of Grunt
 
-## Common uses of Grunt
+- Concatenating and minifying JavaScript source files into a single distribution file http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html
+- Compiling [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/)
+- Watching folders for changes in source files in order to automatically run jobs, like the examples above, when source files change
 
-- Concatenating and minifying JavaScript source files into a single distribution file. **-ED: why should I concatenate and minify a file? Is there a place I can learn more about it?**
-- Compiling [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/) **what are LESS and SASS?**
-- Compiling [CoffeeScript](http://coffeescript.org/)
-- Custom project build tasks
-
-## Learn more and get started with Grunt
-Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install and get it up and running.
+## How to get started with Grunt
+Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install Grunt and get up and running.
 
 ## An example web project
 
@@ -36,18 +34,15 @@ A common use of Grunt for me is to build out JavaScript and LESS files for produ
 Let's say we working on a site and have a folder structure that contains multiple Javascript files, and multiple LESS files. Something like this:
 
 ```xml
-  -- javascript/
-    -- main.js
-    -- extras.js
-    -- lib/
-        -- cool_library.js
-        -- cooler_library.js
-  -- less/
-    -- project.less
-    -- lib/
-        -- mixins.less
-        -- variables.less
+-- javascript/
+  -- main.js
+  -- extras.js
+  -- lib/
+      -- cool_library.js
+      -- cooler_library.js
+-- index.html
 ```
+
 Grunt can help us unify, compile, and optimize these files so they load faster on request. Let's start with the JavaScript files.
 
 ### Unifying and optimizing your JavaScript files
@@ -66,33 +61,12 @@ Now that JavaScript is more widely used to power web sites and apps, sometimes w
 
 ...
 
-
 **-ED: show how now you only need to include one resulting file ***
 ```html
 <script type="text/javascript" scr="javascript/main.js"></script>
 ```
 
 Voila!
-
-
-### Compiling LESS
-
-**-ED: Some context**
-LESS (like SASS) is a dynamic stylesheet language that helps you _program_ your stylesheets (with variables, functions, operators, etc), and then _compile_ them to generate your CSS files.
-
-Grunt can help you compile LESS to generate your CSS files this on the fly, saving you the task to have to do so manually every time you make changes to your stylesheets. Let's see how:
-
-**-ED: refer to sample structure**
-
-**-ED: how grunt can be configured to compile less**
-
-**-ED: show how now you only need to include one resulting file ***
-```html
-<link rel="stylesheet" type="text/css" href="css/style.css">
-```
-
-Voila!
-
 
 ## Watch if fly!
 **-ED: talk about the watch task**

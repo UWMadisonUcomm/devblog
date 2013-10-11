@@ -6,7 +6,7 @@
 ehthumbs.db
 Thumbs.db
 .bundle
-/vendor
+/_bundler
 
 # Sublime
 *.sublime-project

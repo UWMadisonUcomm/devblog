@@ -12,7 +12,7 @@ lede: A JavaScript build tool
 published: true
 ---
 
-Grunt is a very flexible build tool, or task runner, for Node.js. A build tool is something that helps automate repetitive tasks in a project.
+Grunt is a very flexible build tool, or task runner, for Node.js. It helps you automate common tasks.
 
 ## A few common uses of Grunt
 

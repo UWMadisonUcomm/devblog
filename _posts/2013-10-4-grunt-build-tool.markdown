@@ -12,22 +12,23 @@ lede: A JavaScript build tool
 published: true
 ---
 
-Grunt is a very flexible build tool, or task runner, for Node.js. It helps you automate common tasks.
+Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http://nodejs.org/). It helps you automate common tasks within your project. There are a huge amount of contributed plugins to help you automate most common tasks, and it is fairly easy to write your own custom tasks when needed.
 
 ## A few common uses of Grunt
 
 - Concatenating and minifying JavaScript source files into a single distribution file http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html
-- Compiling [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/)
-- Watching folders for changes in source files in order to automatically run jobs, like the examples above, when source files change
+- Compiling [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/)
+- Unit testing
+- Watching folders for changes in source files in order to automatically run necessary tasks
 
 ## How to get started with Grunt
-Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install Grunt and get up and running.
+Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install Grunt and get up and running. You'll need [Node.js](http://nodejs.org/).
 
 ## An example web project
 
-**-ED: Break down this example into two: concatenaing and uglifying JS first, and compiling LESS second. People are more likely to be familiar with having multiple JS files, so they could see the benefit of putting them all into one file. Then, for more advanced peeps, compiling LESS will be useful as well**
+We're going to run through a very simple, and somewhat contrived, sample web project. The example code can be found on Github here:
 
-A common use of Grunt for me is to build out JavaScript and LESS files for production. Let's take a look at both situations.
+[https://github.com/UWMadisonUcomm/grunt-simple-example](https://github.com/UWMadisonUcomm/grunt-simple-example)
 
 ## A sample project
 

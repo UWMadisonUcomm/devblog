@@ -2,9 +2,9 @@
 layout: post
 title: The Grunt build tool
 author: Bryan Shelton
-categories: 
+categories:
   - webdev
-tags: 
+tags:
   - grunt
   - JavaScript
   - build tool
@@ -16,7 +16,7 @@ Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http
 
 ## A few common uses of Grunt
 
-- Concatenating and minifying JavaScript source files into a single distribution file http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html
+- Concatenating and minifying JavaScript source files into a single distribution file [http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html)
 - Compiling [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/)
 - Unit testing
 - Watching folders for changes in source files in order to automatically run necessary tasks

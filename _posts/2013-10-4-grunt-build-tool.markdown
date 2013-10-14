@@ -26,25 +26,33 @@ Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to lear
 
 ## An example web project
 
-We're going to run through a very simple, and somewhat contrived, sample web project. The example code can be found on Github here:
+We're going to run through a very simple example web project. The example code can be found here:
 
 [https://github.com/UWMadisonUcomm/grunt-simple-example](https://github.com/UWMadisonUcomm/grunt-simple-example)
 
-## A sample project
+## The layout
 
-Let's say we working on a site and have a folder structure that contains multiple Javascript files, and multiple LESS files. Something like this:
+Our project consists of a few javascript libraries, and an application javascript file. We also have a Less stylesheet that will pull in some other CSS. We'll be "compiling" all of this down to two minified production ready assets in the assets/ folder. The structure looks like this:
 
 ```xml
--- javascript/
-  -- main.js
-  -- extras.js
-  -- lib/
-      -- cool_library.js
-      -- cooler_library.js
+-- src/
+  -- javascripts/
+    -- application.js
+    -- bootstrap.js
+    -- jquery-1.10.2.min.js
+  -- stylsheets/
+    -- application.less
+    -- bootstrap-theme.css
+    -- bootstrap.css
+-- assets/ (Assets will be generated here by Grunt)
 -- index.html
+-- pacakge.json
+-- Gruntfile.js
 ```
 
-Grunt can help us unify, compile, and optimize these files so they load faster on request. Let's start with the JavaScript files.
+Package.json will define Grunt, and the grunt modules we need, as dependencies. Gruntfile.js is where we'll configure our grunt tasks. We're going to concatenate (combine) and minify the javascripts into assets/app.min.js, using the grunt-contrib-uglify module. We'll use the grunt-contrib-less module to compile application.less into assets/app.min.css. Less can inherintly concatenate, so I usually target a single Less file and use Less' inherint ability to pull in other files.
+
+This gives us a src structure that's easy to read through and work with that will easily render down to production ready assets.
 
 ### Unifying and optimizing your JavaScript files
 ** Some context**

@@ -16,7 +16,7 @@ Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http
 
 ## A few common uses of Grunt
 
-- Concatenating and minifying JavaScript source files into a single distribution file [http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html)
+- Concatenating and minifying JavaScript source files into a single distribution file ([reducing file requests is an important web performance technique](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html))
 - Compiling [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/)
 - Unit testing
 - Watching folders for changes in source files in order to automatically run necessary tasks
@@ -147,7 +147,7 @@ module.exports = function(grunt){
 }
 ```
 
-Here, we've passed an option to the less parser. We've told it to use yuicompressor to compress the final CSS output. The application.less file itself pulls in the other CSS assets in the src directory, in the order it needs them. By specifying to import the files as less, by using @import (less), in the import statements; we've told Less to process the css stylesheets as less files, which will cause them to be concatenated rather than writing out an @import line in the final css stylesheet.
+Here, we've passed an option to the less parser. We've told it to use yuicompressor to compress the final CSS output. The application.less file itself pulls in the other CSS assets in the src directory, in the order it needs them. By specifying to import the files as less, by using @import (less), in the import statements, we've told Less to process the css stylesheets as less files, which will cause them to be concatenated rather than writing out an @import line in the final css stylesheet.
 
 At this point, running grunt from the command line should successfully build assets/app.min.js, and assets/app.min.css. We've told it to run the uglify and less tasks by default.
 
@@ -157,7 +157,7 @@ $ grunt
 
 ### Watching for changes ###
 
-Grunt has a watch module that can watch for changes in certain files, and execute commands when changes are detected. We'd like to execute the uglify task when javascript sources files are changed, and the less task when less files are changed. Our final Gruntfile.js should look like this:
+Grunt has a watch module that can watch for changes in certain files, and execute commands when changes are detected. We'd like to execute the uglify task when javascript source files are changed, and the less task when less files are changed. Our final Gruntfile.js should look like this:
 
 ```javascript
 module.exports = function(grunt){
@@ -213,4 +213,4 @@ $ grunt watch
 
 ## Final thoughts ##
 
-Grunt is a great general pupose automation tool with lots of existing contrib modules to make common project tasks easy to script and execute. We like it because it fits nicely into most projects. Node.js has become a common part of our workflow, even if the project itelf is written in a different server side language.
+Grunt is a great general purpose automation tool with lots of existing contrib modules to make common project tasks easy to script and execute. We like it because it fits nicely into most projects. Node.js has become a common part of our workflow, even if the project itelf is written in a different server side language.

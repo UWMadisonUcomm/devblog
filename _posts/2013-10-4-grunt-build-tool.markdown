@@ -165,7 +165,7 @@ In this example, we are configuring the `less` by passing two parameters:
   * Note that we are specifying only one source LESS file, `application.less`. In this example, this file itself pulls in the other LESS and CSS assets in the src directory via the @import statement, which keeps us from having to specify many source files in the `files` parameter.
 * `options`: which takes configuration options for the `less` task. In this case, we're setting the `yuicompress` option to `true` to enable compression of the resulting CSS file using cssmin.js, a library included in `grunt-contrib-less`. There are [many other options](https://github.com/gruntjs/grunt-contrib-less#options) you can add to the `less` task.
 
-At this point, running grunt from the command line should successfully build assets/app.min.js, and assets/app.min.css. We've told it to run the uglify and less tasks by default.
+At this point, running grunt from the command line should successfully build `assets/app.min.js`, and `assets/app.min.css`. We've told it to run the uglify and less tasks by default.
 
 ```bash
 $ grunt
@@ -173,7 +173,7 @@ $ grunt
 
 ### Watching for changes ###
 
-Grunt has a watch module that can watch for changes in certain files, and execute commands when changes are detected. We'd like to execute the uglify task when javascript source files are changed, and the less task when less files are changed. Our final Gruntfile.js should look like this:
+Grunt has a watch module that can watch for changes in certain files, and execute commands when changes are detected. As a final step, we'd like to execute the `uglify` task when javascript source files are changed, and the `less` task when less files are changed. Our final `Gruntfile.js` should look like this:
 
 ```javascript
 module.exports = function(grunt){
@@ -220,13 +220,18 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['uglify', 'less']);
 }
 ```
+The new `watch` task takes custom watch rules (in this case we named them `javascripts` and `stylesheets`, but you can name them whatever you want). Within these rules, you need to specify:
 
-Now, when we type "grunt watch" on the command line in our project, we'll see that grunt is watching for changes. Try editing the javascript or less source files, and grunt should rebuild the final assets automatically when you save your changes.
+* `files:` the path to the files or directories you want to keep an eye on for changes. For example, in the `javascripts` watch rule, we're asking Grunt to look for changes in the `src/javascripts/**/*` directory. The `**/*` means that any changes to directories or files inside the `scr/javascripts/` directory will trigger the task. There are plenty of other combinations you can use.
+* `tasks:` the name of the custom task(s) you want to execute when changes are detected in the specified directories.
+
+
+Now, when we type `grunt watch` on the command line in our project, Grunt will standy by, watching for changes. Try editing the javascript or less source files, and grunt should rebuild the final assets automatically when you save your changes.
 
 ```bash
 $ grunt watch
 ```
 
-## Final thoughts ##
+## Final thoughts
 
-Grunt is a great general purpose automation tool with lots of existing contrib modules to make common project tasks easy to script and execute. We like it because it fits nicely into most projects. Node.js has become a common part of our workflow, even if the project itelf is written in a different server side language.
+Grunt is a great general purpose automation tool with lots of existing contrib modules to make common project tasks easy to script and execute. We like it because it fits nicely into most projects. Node.js has become a common part of our workflow, even if the project itself is written in a different server side language.

@@ -15,8 +15,9 @@ published: true
 Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http://nodejs.org/). It helps you automate common tasks within your project. There are a wide variety of well suported Grunt modules available for doing common tasks. It's also easy to write your own tasks if needed.
 
 ## A few common uses of Grunt
+Some common tasks you can automate with Grunt to make your life easier include:
 
-- Concatenating and minifying JavaScript source files into a single distribution file ([reducing file requests is an important web performance technique](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html))
+- Combining and minifying JavaScript source files into a single distribution file ([reducing file requests is an important web performance technique](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html))
 - Compiling [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com/)
 - Unit testing
 - Watching folders for changes in source files in order to automatically run necessary tasks
@@ -24,13 +25,13 @@ Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http
 ## How to get started with Grunt
 Read Grunt's [Getting Started](http://gruntjs.com/getting-started) guide to learn how to install Grunt and get up and running. You'll need [Node.js](http://nodejs.org/).
 
-## Example Project ##
+## Example Project
 
 Let's run through a very simple example web project. The example code can be found here:
 
 [https://github.com/UWMadisonUcomm/grunt-simple-example](https://github.com/UWMadisonUcomm/grunt-simple-example)
 
-Our project consists of a few javascript libraries, and an application javascript file. We also have a Less stylesheet that will pull in some other CSS libraries. We'll be "compiling" all of this down to two minified production ready assets in the assets/ folder. The structure looks like this:
+Our project consists of a few javascript libraries, and an application javascript file. We also have a LESS stylesheet that will pull in some other CSS libraries. We'll be "compiling" all of this down to two minified production ready assets in the assets/ folder. The structure looks like this:
 
 ```xml
 -- src/
@@ -44,11 +45,18 @@ Our project consists of a few javascript libraries, and an application javascrip
     -- bootstrap.css
 -- assets/ (Assets will be generated here by Grunt)
 -- index.html
--- pacakge.json
+-- package.json
 -- Gruntfile.js
 ```
 
-Package.json will define Grunt, and the grunt modules we need, as dependencies. Gruntfile.js is where we'll configure our grunt tasks. We're going to concatenate (combine) and minify the javascripts into assets/app.min.js, using the grunt-contrib-uglify module. We'll use the grunt-contrib-less module to compile application.less into assets/app.min.css. Less can inherintly concatenate, so I usually target a single Less file and use Less to pull in other project files.
+
+There are two required Grunt files you need to get things going:
+
+* `package.json`: will define Grunt, and the grunt modules we need, as dependencies.
+* `Gruntfile.js`: is where we'll configure our grunt tasks. 
+
+
+In this exercise, we're going to concatenate (combine) and minify the JavaScript files into `assets/app.min.js`, using the `grunt-contrib-uglify` module. We'll use the `grunt-contrib-less` module to compile `application.less` into `assets/app.min.css`. LESS can inherintly concatenate, so I usually target a single LESS file and use LESS to pull in other project files.
 
 ### The grunt file structure ###
 
@@ -68,12 +76,14 @@ module.exports = function(grunt){
 }
 ```
 
-Gruntfile.js tasks will always be in a wrapper that looks similar to the above example. loadNpmTasks will load grunt tasks from modules. registerTask will register a task name.
-Grunt runs the task named "default" if no tasks are given on the command line. In the above example, typing grunt in your project root will run the "uglify" and "less" tasks, both of which are defined by their respective contributed modules.
+`Gruntfile.js` tasks will always be in a wrapper that looks similar to the above example. `loadNpmTasks` will load grunt tasks from modules. `registerTask` will register a task name.
+Grunt runs the task named "default" if no tasks are given on the command line. 
 
-### Building our javascript ###
+In the above example, typing grunt in your project root will run the "uglify" and "less" tasks, both of which are defined by their respective contributed modules.
 
-To get our javascript source files built to assets/app.min.js, we'll add some configuration for the grunt-contrib-uglify module.
+### Building our JavaScript ###
+
+To get our JavaScript source files built to `assets/app.min.js`, we'll add some configuration for the `grunt-contrib-uglify` module.
 
 ```javascript
 module.exports = function(grunt){
@@ -101,15 +111,17 @@ module.exports = function(grunt){
 }
 ```
 
-Running the uglify command will compile the javascript into assets/app.min.js:
+Running the `uglify` command will compile all the specified JavaScript files into one compressed file, `assets/app.min.js`:
 
 ```bash
 $ grunt uglify
 ```
 
-### Compiling our Less file ###
+### Compiling our LESS file ###
 
-Compiling our src/application.less file will look a lot like compiling our javascript. We will need to configure the grunt-contrib-less module.
+In this part, we will compile our LESS files into CSS and compress the resulting CSS file using the [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) module.
+
+First , take a look at the `less` task we've added to `grunt.initConfig`:
 
 ```javascript
 module.exports = function(grunt){
@@ -127,11 +139,11 @@ module.exports = function(grunt){
     },
     less: {
       application: {
-        options: {
-          yuicompress: true
-        },
         files: {
           "assets/app.min.css": "src/stylesheets/application.less"
+        },
+        options: {
+          yuicompress: true
         }
       }
     }
@@ -147,7 +159,11 @@ module.exports = function(grunt){
 }
 ```
 
-Here, we've passed an option to the less parser. We've told it to use yuicompressor to compress the final CSS output. The application.less file itself pulls in the other CSS assets in the src directory, in the order it needs them. By specifying to import the files as less, by using @import (less), in the import statements, we've told Less to process the css stylesheets as less files, which will cause them to be concatenated rather than writing out an @import line in the final css stylesheet.
+In this example, we are configuring the `less` by passing two parameters:
+
+* `files:` which takes the name of the resulting CSS file, and the source of the LESS file we're compiling it from, in that order.
+  * Note that we are specifying only one source LESS file, `application.less`. In this example, this file itself pulls in the other LESS and CSS assets in the src directory via the @import statement, which keeps us from having to specify many source files in the `files` parameter.
+* `options`: which takes configuration options for the `less` task. In this case, we're setting the `yuicompress` option to `true` to enable compression of the resulting CSS file using cssmin.js, a library included in `grunt-contrib-less`. There are [many other options](https://github.com/gruntjs/grunt-contrib-less#options) you can add to the `less` task.
 
 At this point, running grunt from the command line should successfully build assets/app.min.js, and assets/app.min.css. We've told it to run the uglify and less tasks by default.
 
@@ -175,11 +191,11 @@ module.exports = function(grunt){
     },
     less: {
       application: {
-        options: {
-          yuicompress: true
-        },
         files: {
           "assets/app.min.css": "src/stylesheets/application.less"
+        },
+        options: {
+          yuicompress: true
         }
       }
     },

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Grunt build tool
+title: Grunt, The JavaScript Task Runner
 author: Bryan Shelton
 categories:
   - webdev
@@ -8,11 +8,15 @@ tags:
   - grunt
   - JavaScript
   - build tool
-lede: A JavaScript build tool
+  - task runner
+lede: Automating Tasks
 published: true
+featured_image: http://www.boxyapp.com/wp-content/uploads/2013/05/grunt1.jpg
 ---
 
-Grunt is a very flexible build tool, or task runner, that runs in [Node.js](http://nodejs.org/). It helps you automate common tasks within your project. There are a wide variety of well suported Grunt modules available for doing common tasks. It's also easy to write your own tasks if needed.
+[Grunt](http://gruntjs.com/) is a very flexible task runner, or build tool, that runs in [Node.js](http://nodejs.org/). In a few words, it helps you automate common tasks within your project.
+
+Grunt uses a variety of specialized, well supported _modules_ to automate tasks, but if you're more of a do-it-yourself'er, it also allows you to easily write your own.
 
 ## A few common uses of Grunt
 Some common tasks you can automate with Grunt to make your life easier include:

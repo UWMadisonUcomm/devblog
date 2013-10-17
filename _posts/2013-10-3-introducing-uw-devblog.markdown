@@ -6,7 +6,7 @@ lede: "For starters&#8230;"
 ---
 Welcome to _UW DevBlog_, a space for sharing best practices, ideas and tools with the UW–Madison campus developer community.
 
-Initially, this will be a platform for University Communications and DoIT’s [Web and Mobile Solutions group](https://www.doit.wisc.edu/about/departments/#adi) to talk a little bit about the work we’re doing and how we do it. 
+Initially, this will be a platform for [University Communications](http://uc.wisc.edu/) and [DoIT](http://www.doit.wisc.edu/)’s [Web and Mobile Solutions group](https://www.doit.wisc.edu/about/departments/#adi) to talk a little bit about the work we’re doing and how we do it. 
 
 This is an exciting time to be a developer, with so many new ideas and tools to explore all the time. As we move about campus, we often find other developers doing interesting, innovative things that we wish we had known about earlier. There’s lots to learn, and we can all learn from each other.
 
@@ -16,8 +16,9 @@ Looking beyond campus, we benefit so much from the open source community — in 
 In addition to using the blog to share ideas and tips, the blog itself is an excercise in learning and discovery. If you follow along, you’ll likely notice changes in design and code form time to time. 
 
 At the moment this project is leveraging some of the tools that have become key components of our development process (and some of our initial posts here are about these tools):
-* Git
-* Bootstrap (and LESS)
+
+* [Git](http://git-scm.com/)
+* [Bootstrap](http://getbootstrap.com/) (and [LESS](http://lesscss.org/))
 * [Grunt]({% post_url 2013-10-4-grunt-build-tool %})
 * [Jekyll]({% post_url 2013-10-07-introducing-jekyll %})
 

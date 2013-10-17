@@ -2,7 +2,7 @@
   <header class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <span class="post-lede">{{ post.lede }}</span>
-      <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
       {% include post_meta.html %}
     </div>
     {% if post.featured_image %}
@@ -26,7 +26,8 @@
   </div>
   <footer class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      Share me, plz!
+    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="none">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
   </footer>
 </article>

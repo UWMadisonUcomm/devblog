@@ -75,10 +75,8 @@ body {
 
 .carousel {
   margin-top: 24px;
-}
-@media (min-width: @screen-phone) {
-  .carousel.narrow {
-    width: 50%;
+  &[class*="col-"] {
+    padding: 0;
   }
 }
 

@@ -26,7 +26,7 @@ The daily survey data is persisted locally on the iPod Touch using Mobile Safari
 When the device is returned the researchers export the data as previously described and erase Safari's cache.  Once the cache is erased, the device is ready to be used by another study participant.
 
 
-<div id="screenShotCarousel" class="carousel narrow slide" data-interval="5000">
+<div id="screenShotCarousel" class="carousel slide col-sm-6" data-interval="5000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#screenShotCarousel" data-slide-to="0" class="active"></li>

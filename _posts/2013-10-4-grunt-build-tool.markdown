@@ -14,7 +14,7 @@ published: true
 featured_image: http://www.boxyapp.com/wp-content/uploads/2013/05/grunt1.jpg
 ---
 
-[Grunt](http://gruntjs.com/) is a very flexible task runner, or build tool, that runs in [Node.js](http://nodejs.org/). In a few words, it helps you automate common tasks within your project.
+[Grunt](http://gruntjs.com/) is a very flexible task runner, or build tool, that runs in [Node.js](http://nodejs.org/), and helps you automate common tasks within your project.
 
 Grunt uses a variety of specialized, well supported _modules_ to automate tasks, but if you're more of a do-it-yourself'er, it also allows you to easily write your own.
 

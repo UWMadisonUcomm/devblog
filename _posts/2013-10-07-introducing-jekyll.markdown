@@ -19,7 +19,7 @@ In a few words, Jekyll is a framework that generates static sites. By delivering
 ### When to use it
 Jekyll is especially useful for minimal sites that don't need to be updated often, but would benefit from basic templating to make them more manageable in the back end. Note that we loosely define "often" here, as cases can vary wildly.  
 
-For example, if your site requires heavy templating (see the [Wisconsin Institute for Discovery](http://wid.wisc.edu/) website), and a non-technical user friendly admin area for frequent content management, WordPress or Drupal can be a good fit. But if your site is fairly static and doesn't change often (see this [Lakefront Gateway](http://lakefront.wisc.edu/) "brochure" site), then Jekyll might be a better option. Also, if your goal is optimization and low overhead, Jekyll can be especially useful for building heavy-trafficked, massive sites as well.
+For example, if your site requires heavy templating (see the [Wisconsin Institute for Discovery](http://wid.wisc.edu/) website), and a non-technical user friendly admin area for frequent content management, WordPress or Drupal can be a good fit. But if your site is fairly static and doesn't change often (see this [Lakefront Gateway](http://lakefront.wisc.edu/) "brochure" site), then Jekyll might be a better option. Also, if your goal is optimization and low overhead, Jekyll can be especially useful for building heavy-trafficked sites as well.
 
 
 ## Features

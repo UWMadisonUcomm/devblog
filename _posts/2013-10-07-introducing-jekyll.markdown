@@ -43,7 +43,7 @@ For example, if your site requires heavy templating (see the [Wisconsin Institut
 ## Getting started
 
 <div class="alert alert-info">
-  <strong>Note</strong>: The following instructions are for Max OS X / *nix-based systems, as Jekyll does not officially support documentation for Windows. For instructions on how to use Jekyll on Windows, please see this article on <a class="alert-link" href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" >Running Jekyll on Windows</a> by <a class="alert-link" href="http://www.madhur.co.in/">Madhur Ahuja</a>.
+  <strong>Note</strong>: The following instructions are for Mac OS X / *nix-based systems, as Jekyll does not officially support documentation for Windows. For instructions on how to use Jekyll on Windows, please see this article on <a class="alert-link" href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" >Running Jekyll on Windows</a> by <a class="alert-link" href="http://www.madhur.co.in/">Madhur Ahuja</a>.
 </div>
 
 ### Install Jekyll

@@ -13,7 +13,7 @@ This is an exciting time to be a developer, with so many new ideas and tools to 
 Looking beyond campus, we benefit so much from the open source community — in the tools we use and in learning from others who blog about what they do. We want this to be a place where we can give back a bit.
 
 ## In the Sandbox
-In addition to using the blog to share ideas and tips, the blog itself is an excercise in learning and discovery. If you follow along, you’ll likely notice changes in design and code form time to time. 
+In addition to using the blog to share ideas and tips, the blog itself is an excercise in learning and discovery. If you follow along, you’ll likely notice changes in design and code from time to time. 
 
 At the moment this project is leveraging some of the tools that have become key components of our development process (and some of our initial posts here are about these tools):
 

@@ -7,6 +7,7 @@ ehthumbs.db
 Thumbs.db
 .bundle
 /_bundler
+/node_modules
 
 # Sublime
 *.sublime-project

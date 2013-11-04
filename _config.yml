@@ -8,3 +8,6 @@ category_dir_name: category
 tag_title_prefix: 'Tag: '
 category_title_prefix: 'Category: '
 archive_layout: archive_page
+#rss configs
+url: http://devblog.uc.wisc.edu
+rss_post_limit: 10

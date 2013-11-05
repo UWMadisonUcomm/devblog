@@ -35,7 +35,10 @@ module Jekyll
       self.data['header'] = "#{prefix}#{obj.capitalize }"
 
       self.data['title'] = "#{self.data['header']}: "
+
+      # Two helper booleans for the templates
       self.data['archive_page'] = true
+      self.data['archive'] = true
     end
   end
 
@@ -43,7 +46,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      if site.layouts.key? site.config["archive_layout"] || 'archive_page'
+      if site.layouts.key? site.config["archive_layout"] || 'archive'
         dir = site.config["category_dir_name"] || 'category'
         site.categories.keys.each do |category|
           site.pages << ArchivePage.new(site, site.source, File.join(dir, category), category, 'category')

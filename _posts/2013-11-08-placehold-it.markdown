@@ -92,4 +92,4 @@ Placehold.it can generate either .gif, .jpeg, .jpg, or .png files
 
 ## This tool is super helpful
 
-Placehold.it is one of those tools that, once you find them, it becomes essential in your development process. 5 stars!
+Placehold.it is one of those tools that, once you find it, it becomes essential in your development process. 5 stars!

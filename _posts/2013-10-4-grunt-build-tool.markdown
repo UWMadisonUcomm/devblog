@@ -11,6 +11,8 @@ tags:
   - task runner
 lede: Automating Tasks
 published: true
+author_url: https://twitter.com/bshelton229
+
 ---
 
 [Grunt](http://gruntjs.com/) is a very flexible task runner, or build tool, that runs in [Node.js](http://nodejs.org/), and helps you automate common tasks within your project.

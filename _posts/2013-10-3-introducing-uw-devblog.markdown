@@ -3,6 +3,8 @@ layout: post
 title:  "Introducing UW DevBlog"
 author: "Nick Weaver"
 lede: "For starters&#8230;"
+author_url: https://twitter.com/nickweaver
+
 ---
 Welcome to _UW DevBlog_, a space for sharing best practices, ideas and tools with the UW–Madison campus developer community.
 

@@ -2,10 +2,6 @@
 
 ## To install
 
-**Install submodules:**
-
-    git submodule update --init --recursive
-
 **Install the Node modules (assumes Node has been installed on your machine):**
 
     npm install
@@ -18,8 +14,7 @@ Then visit http://localhost:4000
 Edit the CSS and JS files located in the _assets directory.
 
 ### To recompile, run:
-    grunt 
+    grunt
 
 ### To recompile as you edit these files, run:
     grunt watch
-

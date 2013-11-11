@@ -2,18 +2,24 @@ module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     copy: {
-      submodules: {
+      "uw-ui-toolkit": {
         files: [
           {
             src: '**/*',
-            dest: '_assets/less/uw_bootstrap',
-            cwd: '_submodules/uw_bootstrap/src/less',
+            dest: '_assets/less/uw-ui-toolkit',
+            cwd: 'node_modules/uw-ui-toolkit/src/less',
             flatten: false,
             expand: true
           },
           {
-            src: '_submodules/uw_bootstrap/src/img/*', // uw bootstrap images
+            src: 'node_modules/uw-ui-toolkit/dist/img/*',
             dest: 'img/',
+            flatten: true,
+            expand: true
+          },
+          {
+            src: 'node_modules/uw-ui-toolkit/dist/fonts/*',
+            dest: 'font/',
             flatten: true,
             expand: true
           }

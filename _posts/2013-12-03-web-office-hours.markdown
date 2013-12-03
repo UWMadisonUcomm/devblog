@@ -8,7 +8,7 @@ tags: [professional development]
 lede: "Web Office Hours"
 ---
 
-Come join University Communications' web team on Friday, Dec. 20, 10-11:30 a.m. for our first ever **Web Office Hours**!
+Come join [University Communications]("http://uc.wisc.edu")' web team on Friday, Dec. 20, 10-11:30 a.m. at 711 State St, Suite 200, for our first ever **Web Office Hours**!
 
 
 ## What are Web Office Hours?

@@ -13,7 +13,7 @@ Come join [University Communications]("http://uc.wisc.edu")' web team on Friday,
 
 ## What are Web Office Hours?
 
-Web Office Hours are events where several of us with a wide range of skills and experience in web content, design and development will be available to help with any questions or challenges you're facing in your web-related work. 
+Web Office Hours are opportunities for you to meet with web developers and designers to get help with any questions or challenges you're facing in your web-related work. 
 
 Whether you'd like advice on how to approach a major redesign, pointers on how to address mobile and/or responsive web design, or help with that pesky, little CSS bug in IE8, we'll be there to help. Or if you don't have a specific need but just want to get together and offer your help to others, that would be great too.
 

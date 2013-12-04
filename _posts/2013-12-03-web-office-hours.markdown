@@ -20,7 +20,7 @@ Whether you'd like advice on how to approach a major redesign, pointers on how t
 Oh, and did I mention we'll have donuts and coffee? (Bet your professors never offered that.)
 
 
-## Would like to participate? Drop us a line!
+## Would you like to participate? Drop us a line!
 
 If you can, please [email Nick Weaver](mailto:jnweaver@wisc.edu) if you plan to come. Spontaneous visits are welcome too!
 

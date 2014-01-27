@@ -12,7 +12,9 @@ This is an exciting time for [Mobile UW](http://mobile.wisc.edu/).  The continue
 
 ## What's A Proxy Server?
 
-[UW-Madison](http://www.wisc.edu/) is a big place with many different organizations and services that are all managed locally.  In order to bring these services into Mobile UW apps a mechanism is needed to interact with these data services in a consistent and reliable way.  This mechanism is a Web application called the Proxy Server.
+[UW-Madison](http://www.wisc.edu/) is a big place with many different, distinct organizations and services that are all managed locally.  In order to bring these services into Mobile UW apps a mechanism is needed to interact with these data services in a consistent and reliable way.  This mechanism is a Web application called the Proxy Server.  Below is diagram showing all the data sources that the Proxy Server integrates with.
+
+<img src="/img/posts/2014-01-27-reactive-proxy-server/20140127-mobileuw-proxy-server-data-map.png" width="500">
 
 ## What Was Wrong With The Old One?
 

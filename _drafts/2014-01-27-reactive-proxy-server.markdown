@@ -4,7 +4,7 @@ title:  "Moving To A Reactive Data Server"
 author: Brad Leege
 author_url: https://twitter.com/bradleege
 categories: [mobile, webdev]
-tags: [play framework, scala, mongodb, java, asynchronous, functional programming, stateless, gis, data, data integration, open source]
+tags: [play framework, scala, mongodb, java, asynchronous, functional programming, stateless, geospatial, json, geojson, data, data integration, open source]
 lede: "Asynchronous Data Integration"
 ---
 
@@ -34,8 +34,13 @@ Asychronous Processing allows requests to be made to the Proxy Server, and for t
 
 Much of the overhead of a traditional Java Web application comes from resources being devoted to managing state.  Scala and Play! take the approach of relying on immutable stateless objects.  This allows the much more efficient way of being able to route requests and handle the data when it returns without having to slow everything down to wait.  This applies to HTTP connections as well as database connections.  The new architecture swapped MySQL for MongoDB and by utilizing [ReactiveMongo](http://reactivemongo.org) the Web application can access the data in the database without relying on blocking calls.  It also works entirely in JSON and eliminates the need for traditional ORM tools such as Hibernate which need to translate both data going in and coming out of the database.  The net result is that more, smaller sets of data are able to be passed through quicker than fewer, larger data sets.
 
+## Native Geospatial Support
 
+In addition to speed and native JSON support, the move to [MongoDB](http://www.mongodb.org/) also provides solid Geospatial functionality including GeoJSON.  This allows the Proxy Server to store and query geographic data (e.g. Madison Metro bus stop locations) quickly and accurately.  It's already helped improve the performance of existing geospatial functionality in Mobile UW and will make future geography related features possible.
 
+## Result
+
+The end result with all these changes are more responsive and efficient data source for Mobile UW.  It allows us to meet our current needs as well as provide a solid foundation for the future.
 
 
 

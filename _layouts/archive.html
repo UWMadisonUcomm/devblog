@@ -1,0 +1,19 @@
+
+{% include header.html %}
+
+  {% include navbar.html %}
+
+  <div id="content" class="category col-sm-10 col-md-10  col-sm-offset-1 col-md-offset-1">
+    <div class="row">
+      <h2 class="col-sm-8 col-sm-offset-2">{{ page.header }}</h2>
+    </div>
+    <div class="row">
+      <div class="post-list list-group ">
+        {% for post in page.posts %}
+          {% include post.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% include footer.html %}

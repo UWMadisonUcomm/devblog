@@ -1,0 +1,13 @@
+{
+  "name": "uw_devblog",
+  "version": "0.1.0",
+  "author": "University Communications",
+  "devDependencies": {
+    "uw-ui-toolkit": "git://github.com/UWMadisonUcomm/uw-ui-toolkit#18d4be6b",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

@@ -1,1 +1,0 @@
-## UW-Madison Developer Blog

@@ -1,0 +1,98 @@
+// Import the uw_bootstrap toolkit from _submodules/uw_bootstrap
+@import "uw-ui-toolkit/uw-ui-toolkit.less";
+@import (less) "../highlight.js/styles/solarized_dark.css";
+@import "../font-awesome/less/font-awesome.less";
+
+html {
+  height:100%;
+}
+
+body {
+  position: relative; /* For scrollyspy */
+  padding-top: 50px; /* Account for fixed navbar */
+  height:100%;
+}
+
+#sidebar {
+  overflow:scroll;
+  height:100%;
+  .list-group-item {
+    border-radius: 0;
+    border-left:0;
+    border-right:0;
+    .post-lede {
+      text-transform: uppercase;
+      font-size: @font-size-small;
+    }
+    .post-title {
+      font-size: @font-size-base;
+      margin: 10px 0 5px;
+    }
+    .post-meta{
+      font-size: @font-size-base - 3;
+      font-style: italic;
+    }
+  }
+  .affix {
+    max-height:100%;
+    overflow:scroll;
+    padding:0;
+  }
+}
+
+#content {
+    article {
+      border-left:0;
+      border-radius: 0;
+      border-right:0;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      padding-top: 24px;
+      .post-lede {
+        text-transform: uppercase;
+        font-size: @font-size-base;
+      }
+      .post-feat-image {
+        max-height:500px;
+        overflow:hidden;
+        padding:24px 0;
+
+        img {
+          padding:0;
+        }
+      }
+      .post-title a {
+        color: #6E6A5B;
+      }
+      .post-content {
+        margin-top:24px;
+        margin-bottom:24px;
+      }
+    }
+}
+#content.category article .post-title a {
+  color: #b70101;
+}
+
+.post-list {
+  .list-group-item {
+    border-top:none;
+    &:last-child {
+      border-bottom:none;
+    }
+  }
+}
+
+.carousel {
+  margin-top: 24px;
+  &[class*="col-"] {
+    padding: 0;
+  }
+}
+
+// Overrides for highlight.js
+pre {
+ background-color:transparent;
+ border:none;
+ padding:0px;
+}

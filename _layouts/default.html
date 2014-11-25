@@ -1,18 +1,17 @@
-{% include header.html %}
-	<div id="main" class="group">
-		<div id="primary">
-			<div id="content" role="main">
-						<nav id="nav-above">
-						</nav><!-- #nav-above -->
-	
-							{{content}}
-				
-						<nav id="nav-below">
-						</nav><!-- #nav-above -->
-			</div><!-- #content -->
-		</div><!-- #primary -->
 
-		<div id="secondary" class="widget-area" role="complementary">
-		</div><!-- #secondary .widget-area -->
-	</div><!-- #main -->
+{% include header.html %}
+
+  {% include navbar.html %}
+
+  {% include sidebar.html %}
+
+  <div id="content" class="col-sm-12 col-md-10 col-md-offset-2">
+    <div class="row">
+      {{ content }}
+    </div>
+    <div class="row">    
+      <div id="disqus_thread" class="col-sm-8 col-sm-offset-2"></div>
+    </div>
+  </div>
+
 {% include footer.html %}

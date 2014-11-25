@@ -1,16 +1,13 @@
-# Github settings (can't be changed)
-safe: true
-lsi: false
-pygments: true
-
-# Custom configuration
-permalink: pretty
-
-# Excludes
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Readme.md
-  - .gitignore
-  - node_modules
-  - Gruntfile.js
+name: UW DevBlog
+markdown: redcarpet
+pygments: false
+permalink: /blog/:title
+exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'Gemfile*', 'README.md']
+tag_dir_name: tag
+category_dir_name: category
+tag_title_prefix: 'Tag: '
+category_title_prefix: 'Category: '
+archive_layout: archive
+#rss configs
+url: http://devblog.uc.wisc.edu
+rss_post_limit: 10

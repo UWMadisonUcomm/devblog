@@ -1,0 +1,54 @@
+.navbar {
+  background-image: url('../img/uwcrest_web_sm.png');
+  background-position: -13px -13px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 0;
+  .container {
+    width: auto; //Keep navbar content always aligned to left no matter page width
+  }
+  .navbar-header {
+    margin-left: 18px;
+  }
+  .navbar-collapse {
+    background-color: @uw-red-dark;
+  }
+  .dropdown-menu .divider {
+    margin: 4px 0;
+    background-color: transparent;
+  }
+}
+.page-header {
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+// If we're using a fixed navbar, add margin-top to adjacent sibling containers
+.navbar-fixed-top + .jumbotron {
+  margin-top: 50px;
+}
+.navbar-fixed-top + .container, .navbar-fixed-top + .row {
+  margin-top: 72px;
+}
+
+@media (min-width: @grid-float-breakpoint) {
+  .navbar {
+    padding-left: 15px;
+    .navbar-collapse {
+      background-color: transparent;
+    }
+    .dropdown-menu .divider {
+      margin: 9px 0;
+      background-color: @gray-lighter;
+    }
+  }
+}
+
+// add margin before the first container after the navbar
+body > .container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+

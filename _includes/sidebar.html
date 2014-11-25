@@ -1,0 +1,16 @@
+<div id="sidebar" class="affix hidden-xs hidden-sm col-md-2">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="list-group">
+        {% for post in site.posts %}
+          <a href="{{ post.url }}" class="list-group-item">
+            <span class="post-lede">{{ post.lede }}</span>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <span class="post-meta">{{ post.date | date_to_string }}</span>
+          </a>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+

@@ -21,7 +21,7 @@ Google generally does do a pretty good job.  That said they aren't perfect.
 While Google has since fixed the above error after it was discovered in Spring 2014, the bigger issue is that making these fixes is totally under the control and timeline of Google.  The reason is because it's *their* data.  What happens if UW opens a new building and Google isn't ready to update their data?  How will people find the new building?
 
 ## OpenStreetMap To The Rescue
-[OpenStreetMap](http://www.openstreetmap.org/) is an open and community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Communications [Nick Weaver](https://twitter.com/nickweaver), [Bryan Shelton](https://twitter.com/bshelton229), and [Vidal Quevedo](https://twitter.com/VidalQuevedo) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the new [UW Campus Map](http://www.map.wisc.edu).  Using OpenStreetMap allows UW Communications to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map.  It also allows provides this data back to the community to freely make use of it in their maps.  This is the [Wisconsin Idea](http://wisconsinidea.wisc.edu) in action.
+[OpenStreetMap](http://www.openstreetmap.org/) is an open and community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Communications ([Nick Weaver](https://twitter.com/nickweaver), [Bryan Shelton](https://twitter.com/bshelton229), and [Vidal Quevedo](https://twitter.com/VidalQuevedo)) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the new [UW Campus Map](http://www.map.wisc.edu).  Using OpenStreetMap allows UW Communications to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map.  It also allows provides this data back to the community to freely make use of it in their maps.  This is the [Wisconsin Idea](http://wisconsinidea.wisc.edu) in action.
 
 ## Now On Mobile
 Mobile UW has traditionally relied on Apple Maps for iOS and Google Maps for Android since it was originally launched in 2010.  Now that UW has this OpenStreetMap powered API everyone can enjoy the same benefits of the Desktop map on the go.
@@ -41,3 +41,11 @@ Mobile UW has traditionally relied on Apple Maps for iOS and Google Maps for And
 
 ## You Can Participate Too!
 OpenStreetMap is free and open to anyone in the world to map anywhere in the world.  According to the [About OpenStreetMap Web page](https://www.openstreetmap.org/about) you can map "roads, trails, cafes, railway stations, and much more, all over the world."  Check out the easy to use [iD Editor](http://www.openstreetmap.org/edit?editor=id) to get started!
+
+## Open Data At UW
+If you're interested in learning more about Open Data at UW please see [WID](http://wid.wisc.edu) Director [David Krakauer](http://wid.wisc.edu/profile/david-krakauer/)'s brief video on the ["Power of Open Data"](http://wid.wisc.edu/wid-culture/david-krakauer-and-the-power-of-open-data/) as well as the conversation from the recent Hybrid Zone X event [“From Open Data to an Open Society.”](http://wid.wisc.edu/wid-culture/from-open-data-to-an-open-society-follow-the-conversation/)
+
+<iframe src="//player.vimeo.com/video/108411370" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+

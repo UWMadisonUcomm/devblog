@@ -16,7 +16,7 @@ The UW campus is a constantly evolving place.  New buildings are being built and
 ## So Why Not Just Use Google?
 Google generally does do a pretty good job.  That said they aren't perfect.
 
-<a href="/img/posts/2014-11-25-openstreetmap-opendata/20140418-uw-google-map-error.png" target="_blank"><img src="/img/posts/2014-11-25-openstreetmap-opendata/20140418-uw-google-map-error.png" width="500"></a>
+<a href="/img/posts/2014-11-26-openstreetmap-opendata/20140418-uw-google-map-error.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20140418-uw-google-map-error.png" width="500"></a>
 
 While Google has since fixed the above error after it was discovered in Spring 2014, the bigger issue is that making these fixes is totally under the control and timeline of Google.  The reason is because it's *their* data.  What happens if UW opens a new building and Google isn't ready to update their data?  How will people find the new building?
 

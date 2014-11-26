@@ -18,10 +18,10 @@ Google generally does do a pretty good job.  That said they aren't perfect.
 
 <img src="/img/posts/2014-11-25-openstreetmap-opendata/20140418-uw-google-map-error.png" width="600">
 
-Google has since fixed the above error after it was discovered in Spring 2014.  The bigger issue though is that making these fixes is totally under the control and timeline of Google as it's *their* data.  What happens if UW opens a new building and Google isn't ready to update their data?  How will people find it?
+While Google has since fixed the above error after it was discovered in Spring 2014, the bigger issue is that making these fixes is totally under the control and timeline of Google.  The reason is because it's *their* data.  What happens if UW opens a new building and Google isn't ready to update their data?  How will people find the new building?
 
 ## OpenStreetMap To The Rescue
-[OpenStreetMap](http://www.openstreetmap.org/) is an open and community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Communications [Nick Weaver](https://twitter.com/nickweaver), [Bryan Shelton](https://twitter.com/bshelton229), and [Vidal Quevedo](https://twitter.com/VidalQuevedo) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the new [UW Campus Map](http://www.map.wisc.edu).  Using OpenStreetMap allows UW Communications to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map.  It also allows provides this data freely to others to use in their maps.  This is the [Wisconsin Idea](http://wisconsinidea.wisc.edu) in action.
+[OpenStreetMap](http://www.openstreetmap.org/) is an open and community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Communications [Nick Weaver](https://twitter.com/nickweaver), [Bryan Shelton](https://twitter.com/bshelton229), and [Vidal Quevedo](https://twitter.com/VidalQuevedo) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the new [UW Campus Map](http://www.map.wisc.edu).  Using OpenStreetMap allows UW Communications to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map.  It also allows provides this data back to the community to freely make use of it in their maps.  This is the [Wisconsin Idea](http://wisconsinidea.wisc.edu) in action.
 
 
 

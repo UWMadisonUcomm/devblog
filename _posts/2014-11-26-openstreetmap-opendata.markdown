@@ -26,5 +26,18 @@ While Google has since fixed the above error after it was discovered in Spring 2
 ## Now On Mobile
 Mobile UW has traditionally relied on Apple Maps for iOS and Google Maps for Android since it was originally launched in 2010.  Now that UW has this OpenStreetMap powered API everyone can enjoy the same benefits of the Desktop map on the go.
 
+<div>
+	<img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-ios.png" width="230" align="left">
+	<img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-ios.png" width="230" align="right">
+</div>
+
+<br clear="all"/>
+<div>
+	<img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-android.png" width="230" align="left">
+	<img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-android.png" width="230" align="right">
+</div>
+
+<br clear="all"/>
+
 ## You Can Participate Too!
 OpenStreetMap is free and open to anyone in the world to map anywhere in the world.  According to the [About OpenStreetMap Web page](https://www.openstreetmap.org/about) you can map "roads, trails, cafes, railway stations, and much more, all over the world."  Check out the easy to use [iD Editor](http://www.openstreetmap.org/edit?editor=id) to get started!

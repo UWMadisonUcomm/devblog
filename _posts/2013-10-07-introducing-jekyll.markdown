@@ -137,7 +137,7 @@ Now that our development environment is set, let's use the default template to c
 - Configure your post by adding a [YAML front-matter](http://jekyllrb.com/docs/frontmatter/) header. This is required by Jekyll to process the post as a special file, and also serves as an area for you to create custom variables to be used in the body of your post and throughout the site. Let's just add the `layout`, `title`, and `categories` for now:
 
 
-```markdown
+```
 ---
 layout: default
 title: "My first post"
@@ -153,7 +153,7 @@ categories: practice test
 
 - Below the front-matter header, add some basic markdown content:
 
-```markdown
+```
 ---
 layout: default
 title: "My first post"
@@ -175,7 +175,7 @@ Let's take a look at the templating structure of Jekyll.
 
 - First, recall that we used a Front Matter block to define the basic configuration of our test post (this also applies to pages):
 
-```markdown
+```
 ---
 layout: default
 title: "My first post"
@@ -210,7 +210,7 @@ Let's work on an example to see how includes work. Let's say you want to move th
 
 Separating HTML templates into includes and layout is a great way to make your code more reusable and your site more manageable. You could go all the way and make your template files nothing but a bunch of includes to keep their structure cleaner. For example, the `default.html` file for this website looks like this:
 
-```markdown
+```
 
   <!-- Example: the default.html template file 
   for the UW-Madison Devblog --> 

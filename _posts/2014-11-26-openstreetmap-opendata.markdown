@@ -8,10 +8,10 @@ tags: [OpenStreetMap, OpenData, OSM, mobile, android, ios, maps, geo]
 lede: "Using OpenData"
 ---
 
-One of the exciting new features of [Mobile UW 2.0](http://mobile.wisc.edu) is the "new" maps.  By "new" I mean being able to take advantage the [UW Campus Map](http://www.map.wisc.edu) infrastructure that [UW Communications](http://uc.wisc.edu) recently built.
+One of the exciting new features of [Mobile UW 2.0](http://mobile.wisc.edu) is the "new" maps.  By "new" I mean being able to take advantage the [UW Campus Map](http://www.map.wisc.edu) infrastructure that [UW Marketing](http://umark.wisc.edu) recently built.
 
 ## What's So Exciting About This?
-The UW campus is a constantly evolving place.  New buildings are being built and old buildings are being remodeled / repurposed all the time.  The UW campus is also a very large place with people from all around Wisconsin and the world visting on a daily basis.  Whether you're a seasoned traveller on campus or someone who's never been here before everyone at some point will need to be able to find their way around.  In order for UW to function it needs a mapping and wayfinding solution that keeps up with all the changes.
+The UW campus is a constantly evolving place.  New buildings are being built and old buildings are being remodeled or repurposed all the time.  The UW campus is also a very large place with people from all around Wisconsin and the world visting on a daily basis.  Whether you're a seasoned traveller on campus or someone who's never been here before, everyone at some point will need to be able to find their way around.  In order for UW to function it needs a mapping and wayfinding solution that keeps up with all the changes.
 
 ## So Why Not Just Use Google?
 Google generally does do a pretty good job.  That said they aren't perfect.
@@ -21,20 +21,20 @@ Google generally does do a pretty good job.  That said they aren't perfect.
 While Google has since fixed the above error after it was discovered in Spring 2014, the bigger issue is that making these fixes is totally under the control and timeline of Google.  The reason is because it's *their* data.  What happens if UW opens a new building and Google isn't ready to update their data?  How will people find the new building?
 
 ## OpenStreetMap To The Rescue
-[OpenStreetMap](http://www.openstreetmap.org/) is an open and community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Communications ([Nick Weaver](https://twitter.com/nickweaver), [Bryan Shelton](https://twitter.com/bshelton229), and [Vidal Quevedo](https://twitter.com/VidalQuevedo)) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the new [UW Campus Map](http://www.map.wisc.edu).  Using OpenStreetMap allows UW Communications to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map.  It also allows provides this data back to the community to freely make use of it in their maps.  This is the [Wisconsin Idea](http://wisconsinidea.wisc.edu) in action.
+[OpenStreetMap](http://www.openstreetmap.org/) is an open, community driven source of geographic data.  It's been called the "Wikipedia of Maps".  Using OpenStreetMap as the basis, the team at UW Marketing ([Bryan Shelton](https://twitter.com/bshelton229) and [Nick Weaver](https://twitter.com/nickweaver)) was able to put all UW's campus geographic data into OpenStreetMap and use it to power the [UW Campus Map](http://map.wisc.edu).  Using OpenStreetMap allows UW Marketing to update the data whenever anything changes on campus and have it *immediately available* in the UW Campus Map. It also provides this data back to the community to freely make use of it in their maps.
 
 ## Now On Mobile
-Mobile UW has traditionally relied on Apple Maps for iOS and Google Maps for Android since it was originally launched in 2010.  Now that UW has this OpenStreetMap powered API everyone can enjoy the same benefits of the Desktop map on the go.
+Mobile UW has traditionally relied on Apple Maps for iOS and Google Maps for Android since it was originally launched in 2010.  Now that UW has this OpenStreetMap powered API everyone can enjoy the same benefits of the campus map on the go.
 
-<div>
-	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-ios.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-ios.png" width="230" align="left"></a>
-	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-ios.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-ios.png" width="230" align="right"></a>
+<div align="center">
+	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-ios.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-ios.png" width="230" ></a>
+	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-ios.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-ios.png" width="230"></a>
 </div>
 
 <br clear="all"/>
-<div>
-	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-android.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-android.png" width="230" align="left"></a>
-	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-android.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-android.png" width="230" align="right"></a>
+<div align="center">
+	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-android.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-original-map-android.png" width="230"></a>
+	<a href="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-android.png" target="_blank"><img src="/img/posts/2014-11-26-openstreetmap-opendata/20141126-mobileuw-new-map-android.png" width="230"></a>
 </div>
 
 <br clear="all"/>
